@@ -1,0 +1,130 @@
+@media screen and (max-width: 768px) {
+    .skills {
+        width: 110px;
+        height: 50px;
+    }
+
+    .skills2 {
+        width: 160px;
+        height: 60px;
+    }
+
+    .skillscol {
+        width: 400px;
+    }
+
+    .line {
+        width: 100%;
+
+    }
+
+    .contact {
+        width: 80%;
+        height: 550px;
+
+    }
+
+    .card {
+        margin-top: 17px;
+    }
+
+    .login-bg {
+
+
+
+        background-image: url('./img/bg2.PNG');
+        background-repeat: no-repeat;
+
+    }
+
+
+}
+
+
+body {
+    font-family: "Times New Roman", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, serif;
+}
+
+.nav-link {
+
+    color: rgb(224, 223, 221);
+    font-size: 32px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .portfolio {
+
+        color: rgb(224, 223, 221);
+        font-size: 24px;
+        border: none;
+
+        display: flex;
+
+    }
+}
+
+.nav-link:hover {
+    background-color: transparent;
+    color: rgb(83, 83, 80);
+}
+
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.login-bg {
+
+    background-image: url('./img/bg7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-size: 120%;
+    background-position: -130px 40px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .login-bg {
+
+
+
+        background-image: url('./img/bg2.PNG');
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+}
+
+
+
+/* .row1 {
+    background-image: url(./img/bg7.png);
+    background-size:auto;
+} */
+
+/* .row1:hover{
+    background-image: url(./img/bg5.png);
+} */
+
+@media screen and (max-width: 768px) {
+
+
+    .portfolio {
+
+        color: rgb(224, 223, 221);
+        font-size: 24px;
+        border: none;
+
+        display: flex;
+
+    }
+
+
+
+}
