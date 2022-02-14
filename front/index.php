@@ -45,27 +45,43 @@
 
 
 
-<div class="container">
+<div class="container" >
   <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
+  <div class="middle" id="middle">
     
    
     <h1 style="font-size:50px">I am Hcyeeeee</h1>
     <p>web designer</p>
-    <a href="?do=index"> <button src="./img/login.png">more</button></a>
+    <a href="?do=home"> <button src="./img/login.png">more</button></a>
   </div>
 
  
 </div>
 
 
-<div class="hero-image">
+<!-- <div class="hero-image">
   <div class="hero-text">
     <h1 style="font-size:50px">I am Hcyeeeee</h1>
     <p>web designer</p>
     <a href="?do=index"> <button src="./img/login.png">welcome</button></a>
   </div>
-</div>
+</div> -->
+
+<script>
+
+
+ 
+ // 开始写 jQuery 代码...
+ $(document).ready(function(){
+  $("button").click(function(){
+    $("container").hide();
+  });
+});
+
+
+
+</script>
+
 
 
 </body>

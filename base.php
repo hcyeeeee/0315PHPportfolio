@@ -195,7 +195,7 @@ public function q($sql){
 
 date_default_timezone_set("Asia/Taipei");
 
-                        session_start();
+session_start();
                         
 $User=new DB('user');
                         
