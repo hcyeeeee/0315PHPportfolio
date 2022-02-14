@@ -31,10 +31,17 @@
         </p>
     </div>
 
-    <div class="col col-12 d-flex justify-content-center align-items-center">
+  
+
+        <div class="col col-12 d-flex justify-content-center align-items-center">
+        <p class="display-5"><em> - experience -</em></p>
+    </div>
+
+    <div class="col col-6 d-flex justify-content-start ">
         <p class="card-text">
             從設計領域進入網頁設計<br>
             棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊<br>
             棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊<br>
             棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊棕熊<br>
         </p>
+        </div>

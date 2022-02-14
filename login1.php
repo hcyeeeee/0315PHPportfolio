@@ -1,35 +1,12 @@
-<?php
-include_once "../base.php";
-
-?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>resume</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-   
-</head>
-
-
-<body>
-
 <div class="container">
             <div class="d-flex justify-content-center">
                 <a class="navbar-brand" href="#"><img src="./img/logo.jpg" width="250" height="150" alt=""></a>
             </div>
             </div>
-            <div class="container">
-  <!-- nav -->
-  <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+    
+   
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -92,26 +69,38 @@ include_once "../base.php";
         </div>
 
     </nav>
-    </div>
+    <!-- nav end -->
     <!-- nav end -->
 
-    <?php
-        $do=$_GET["do"]??'index';
+
+               
+                 <?php
+        $do=$_GET["do"]??'login';
         $file='front/'.$do.".php";
         if(file_exists($file)){
             include $file;
-       
         }
 
-?>
+
+        ?>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            </div>
+        </div>
+</div>
+    </div>
+   
+ 
 
 
     <!-- footer -->
     <div class="container-fluid">
-        <div class="d-flex justify-content-center align-items-center bg-green mx-5 my-3 ">
-            © 2022 Copyright All Rights Reserved Designed by &nbsp;
-            <!-- <img src="./img/copyright.png" width="600px" height="40" alt=""> -->
-            <img src="./img/黃莘懿.jpeg" style="width: 25px;">
+        <div class=" d-flex justify-content-center fixed-bottom  " width="50px">
+            © 2021 Copyright All Rights Reserved Designed by &nbsp; <img src="./img/黃莘懿.jpeg" style="width: 25px;">
         </div>
     </div>
 
@@ -119,10 +108,19 @@ include_once "../base.php";
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
     <!-- tabs js -->
     <script>
         $(document).ready(function () {
@@ -135,9 +133,6 @@ include_once "../base.php";
             event.target // newly activated tab
             event.relatedTarget // previous active tab
         })
-        var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel)
-  
     </script>
 
 
