@@ -1,38 +1,31 @@
-    <!-- login -->
+<h2 class="text-center font-weight-bold">登入會員</h2>
 
-    <div class="container-fluid ">
-
-<div class="login-bg"  >
-        <div class="row">
-            <div class="col col-12 d-flex justify-content-center mt-5">
-                <img class="login" src="./img/login.png" height="130px"  width="200px" alt="">
+    <table class='table m-auto w-auto'>
+        <tr>
+            <td>帳號：</td>
+            <td><input type="text" name="acc" id="acc" ></td>
+        </tr>
+        <tr>
+            <td>密碼：</td>
+            <td><input type="password"  name="pw" id="pw" ></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1">
+                   remember me
+                </td>
+           
+        </tr>
+        
+     
+    </table>
+    <div class='text-center'>
+   <button onclick="login()">登入</button>
+   <button onclick="reset()">重置</button>
+                <a href="?do=reg" >註冊</a>
+                <a href="?do=forget">忘記密碼</a>
             </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col col-4">
-                <div class="form-group d-flex">
-                    <label for="account">Account</label>
-                </div>
-                <div>
-                <input type="text" class="form-control" id="account" aria-describedby="emailHelp">
-               
-                </div>
-
-                <div class="form-group d-block">
-                    <label for="Password">Password</label>
-                    <input type="password" class="form-control" id="Password">
-                </div>
-                <div class="form-group form-check mt-2 d-block">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">remember me</label>
-                </div>
-               <div>
-                <a href="?do=login" class="btn btn-dark rounded mt-2">登入</a>
-                <a href="?do=reg" class="btn btn-dark rounded mt-2">註冊</a>
-              
-                <a href="?do=forget">忘記密碼</a> | 
-                <a href="?do=reg">尚未註冊</a>
 </div>
+           
 
 
 <script>
