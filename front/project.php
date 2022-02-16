@@ -1,4 +1,3 @@
-
 <style>
 .container {
   position: relative;
@@ -6,176 +5,95 @@
 }
 
 .image {
-  opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.mask {
+    position: absolute;
+    background: rgba(17, 17, 17, .7);
+    width: 230px;
+    height: 230px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    color: #ff05db;
+    text-align: center;
+}
+
+/* .overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+} */
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
+.aaa:hover .overlay {
   opacity: 1;
 }
 
 .text {
-  background-color: black;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 </style>
-</head>
-<body>
 
-<h2>Opacity with Box</h2>
-<p>Hover over the image to see the effect.</p>
+  <!-- <div class="col">
+  <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">seemore</div>
+    <div class="">這是我做的啦啦啦啊ㄌ</div>
+  </div>
+  </div> -->
+
+
+
 
 <div class="container">
-    <div class="row">
-        <div class="col">
-  <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="text">seemore</div>
-    <div class="">這是我做的啦啦啦啊ㄌ</div>
-  </div>
+  <div class="row">
+      <div class="col col-4 aaa">
+      <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image">
+      <div class="overlay">
+      <div class="text">Hello World</div>
+      </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+          <div class="image">
+            <img src="https://picsum.photos/seed/picsum/1000/800" class="card-img-top">
+            <div class="mask">
+              <div class="my-5">展覽海報<br>以AI和手繪繪製而成</div>
+              <a href="https://www.behance.net/gallery/114069167/Textile-Exhibition-Poster" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+      </div>
+
+    <div class="col col-4 aaa">
+       <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image">
+       <div class="overlay">
+       <div class="text">Hello World</div>
+       </div>
+       </div>
 
   </div>
-
-  <div class="col">
-  <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="text">seemore</div>
-    <div class="">這是我做的啦啦啦啊ㄌ</div>
-  </div>
-  </div>
-
-
-  </div>
-</div>
-
-
-<!DOCTYPE html>
-<html>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
-<body>
-
-<!-- Header -->
-<div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
-
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
   </div>
 </div>
-
-</body>
-</html>
-
-  
-</body>
-</html>

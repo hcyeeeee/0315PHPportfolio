@@ -59,7 +59,7 @@ function login(){
 
                     if(user.acc=='admin'){
 
-                        location.href='back.php'
+                        location.href='back/index.php'
 
                     }else{
 
