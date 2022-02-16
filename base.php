@@ -200,6 +200,6 @@ date_default_timezone_set("Asia/Taipei");
 session_start();
                         
 $User=new DB('user');
-                        
-
+$Work=new DB('work');                      
+$Aboutme=new DB('aboutme');  
 ?>

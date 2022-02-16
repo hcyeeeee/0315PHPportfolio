@@ -1,99 +1,333 @@
 <style>
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
     cursor: pointer;
-    text-decoration: underline;
+    transition: 0.3s;
 }
-.mask {
-    position: absolute;
-    background: rgba(17, 17, 17, .7);
-    width: 230px;
-    height: 230px;
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    opacity: 0;
-    color: #ff05db;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
     text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
 }
 
-/* .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-} */
-
-.aaa:hover .overlay {
-  opacity: 1;
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
 </style>
 
-  <!-- <div class="col">
-  <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="text">seemore</div>
-    <div class="">這是我做的啦啦啦啊ㄌ</div>
-  </div>
-  </div> -->
+
+
+<div class="container ">
+    <!-- <div class="row d-flex justify-content-center">
+<div class="col-6">
+            <br>
+            <br>
+            <br>
+            <br>
+              <h1 class="display-1"><em>project </em></h1>
+                    <p >
+<h5>Currently seeking new opportunities
+
+I'm a paragraph.<br>
+ Click here to add your own text and edit me. <br>
+ I’m a great place for you to tell a story and let your users know a little more about you.
+ <br>
+</h5>  
+
+
+<hr>
+</div> -->
+    <!-- banner-->
+
+    <br> <br>
+    <!-- <div class="row">
+        <div class="col col-6 " style="font-weight:bold">
+            <h3> Textile Design</h3>
+        </div>
+
+
+        <div class="col col-6 " style=" text-align:right">
+            我的布我的布我的布我的布我的布<br>
+            我的布我的布我的布我的布我的布我的布我的布<br>
+            我的布我的布我的布我的布我的布<br>
+            我的布我的布我的布我的布我的布我的布我的布<br>
+        </div>
 
 
 
+    </div> -->
 
-<div class="container">
-  <div class="row">
-      <div class="col col-4 aaa">
-      <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image">
-      <div class="overlay">
-      <div class="text">Hello World</div>
-      </div>
-      </div>
 
-      <div class="col-sm-6 col-md-4 col-lg-3 ">
-          <div class="image">
-            <img src="https://picsum.photos/seed/picsum/1000/800" class="card-img-top">
-            <div class="mask">
-              <div class="my-5">展覽海報<br>以AI和手繪繪製而成</div>
-              <a href="https://www.behance.net/gallery/114069167/Textile-Exhibition-Poster" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+    <div class="row">
+        <div class="col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/12.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/13.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/11.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-          </div>
-      </div>
 
-    <div class="col col-4 aaa">
-       <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image">
-       <div class="overlay">
-       <div class="text">Hello World</div>
-       </div>
-       </div>
 
-  </div>
-  </div>
-</div>
+        </div>
+        <!-- 1end -->
+        <div>
+            <br><br><br><br><br><br><br>
+            <hr>
+        </div>
+        <!-- 2 -->
+
+        <br> <br>
+        <div class="row">
+            <div class="col col-6 " style="font-weight:bold">
+                <h3> Design</h3>
+            </div>
+
+
+            <div class="col col-6 " style=" text-align:right">
+                我的布我的布我的布我的布我的布<br>
+                我的布我的布我的布我的布我的布我的布我的布<br>
+                我的布我的布我的布我的布我的布<br>
+                我的布我的布我的布我的布我的布我的布我的布<br>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" id="myModal">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="./img/12.jpg" class="d-block w-50 h-50" alt="...">
+                            &nbsp;
+                            <img src="./img/13.jpg" class="d-block w-50 h-50" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/13.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/11.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad"></a>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+            <!-- 2end -->
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <!-- 3 -->
+
+            <br> <br>
+            <div class="row">
+                <div class="col col-6 " style="font-weight:bold">
+                    <h3> web Design</h3>
+                </div>
+
+
+                <div class="col col-6 " style=" text-align:right">
+                    我的布我的布我的布我的布我的布<br>
+                    我的布我的布我的布我的布我的布我的布我的布<br>
+                    我的布我的布我的布我的布我的布<br>
+                    我的布我的布我的布我的布我的布我的布我的布<br>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+            <div class="col col-6 " style="font-weight:bold">
+                  
+                <iframe width="100%" height="600" src="http://220.128.133.15/s1100426/calender/"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <!-- 3end -->
+                <!-- 4 -->
+                <!-- Trigger the Modal -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-3">
+                            <img id="myImg" src="./img/12.jpg" alt="Snow" style="width:100%;max-width:600px">
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption">huihuihihuih</div>
+                            </div>
+                        </div>
+                        <div class="col col-3">
+                            <img id="myImg" src="./img/12.jpg" alt="Snow" style="width:100%;max-width:600px">
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption">huihuihihuih</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- 4end -->
+                <!-- 4end -->
+
+
+
+
+
+                <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+
+                var captionText = document.getElementById("caption");
+                img.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                </script>

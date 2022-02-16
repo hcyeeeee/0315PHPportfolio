@@ -39,6 +39,8 @@
   font-size: 16px;
   padding: 16px 32px;
 }
+
+
 </style>
 </head>
 <body>
@@ -50,8 +52,10 @@
   <div class="middle" id="middle">
     
    
-    <h1 style="font-size:50px">I am Hcyeeeee</h1>
-    <p>web designer</p>
+    <h1 style="font-size:142px">I am Hcyeeeee</h1>
+    <p>web design</p>
+    <p>graphic design</p>
+    <p>textile design</p>
     <a href="?do=home"> <button src="./img/login.png">more</button></a>
   </div>
 

@@ -32,7 +32,8 @@ include_once "base.php";
 
         </div>
 
-    <?php $do=$_GET["do"]??'index';
+    <?php 
+    $do=$_GET["do"]??'index';
          $file='front/'.$do.".php";
          if(file_exists($file)){
          include $file;
