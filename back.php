@@ -1,9 +1,9 @@
-<?php include_once "../base.php";
+<?php include_once "base.php";
 
-// if(!isset($_SESSION['user'])){
-//   to("../index.php");
-//   exit();
-// }
+if(!isset($_SESSION['user'])){
+  to("index.php");
+  exit();
+}
 
 ?>
 
@@ -33,7 +33,7 @@
 
     <div class="container">
         <div class="d-flex justify-content-center">
-            <a class="navbar-brand" href="#"><img src="../img/logo.jpg" width="250" height="150" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./img/logo.jpg" width="250" height="150" alt=""></a>
         </div>
     </div>
     <!-- nav -->
@@ -57,13 +57,11 @@
        </div>
 
     <div>
-        <?php
-        $do=$_GET["do"];
-        $file=$do.".php";
-        if(file_exists($file)){
-            include $file;
-        }?> 
-
+    <?php $do=$_GET["do"]??'back';
+         $file='back/'.$do.".php";
+         if(file_exists($file)){
+         include $file;
+       }?>
     </div>
 
 
