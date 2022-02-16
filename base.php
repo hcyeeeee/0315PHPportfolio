@@ -14,8 +14,7 @@ class DB{
         $this->pdo=new PDO($this->dsn,$this->root,$this->password);
     }
 
-
-    
+   
 // all
 
 public function all(...$arg){
@@ -202,4 +201,15 @@ session_start();
 $User=new DB('user');
 $Work=new DB('work');                      
 $Aboutme=new DB('aboutme');  
+$Bottom=new DB('bottom');
+
+if(!isset($_SESSION['bottom'])){
+    $bottom=$Bottom->find(1);
+    $bottom['bottom']++;
+    $Bottom->save($bottom);
+    $_SESSION['bottom']=$bottom['bottom'];
+  }
+  
+
+// $Bottom->save(['id'=>2,'bottom'=>$_POST['bottom']]);
 ?>

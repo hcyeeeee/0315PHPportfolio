@@ -27,7 +27,6 @@
 </div>
            
 
-
 <script>
 function reset(){
     $("#acc,#pw").val("")
@@ -39,16 +38,14 @@ function login(){
                 pw:$("#pw").val(),
             }
     
-    $.post("api/chk_acc.php",{acc:user.acc},(chk)=>{
+    $.post("./api/chk_acc.php",{acc:user.acc},(chk)=>{
 
         if(parseInt(chk)==0){
-
             alert("查無帳號")
             reset()
 
         }else{
-
-            $.post("api/chk_pw.php",user,(chk)=>{
+            $.post("./api/chk_pw.php",user,(chk)=>{
 
                 if(parseInt(chk)==0){
 
@@ -59,7 +56,7 @@ function login(){
 
                     if(user.acc=='admin'){
 
-                        location.href='back.php'
+                        location.href='./back.php'
 
                     }else{
 

@@ -1,12 +1,10 @@
 <?php
 include_once "../base.php";
 
-$chk=$User->math('count','*',['acc'=>$_POST['acc'],'pw'=>$_POST['pw']]);
-if($chk>0){
-    $_SESSION['login']=$_POST['acc'];
-    echo 1;
+$user=$User->find(['email'=>$_POST['email']]);
+if(!empty($user)){
+    echo "您的密碼為:".$user['pw'];
 }else{
-    echo 0;
+    echo "查無此資料";
 }
-
 ?>
