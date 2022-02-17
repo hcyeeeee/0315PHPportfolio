@@ -57,7 +57,7 @@
        </div>
 
     <div>
-    <?php $do=$_GET["do"]??'back';
+    <?php $do=$_GET["do"]??'';
          $file='back/'.$do.".php";
          if(file_exists($file)){
          include $file;

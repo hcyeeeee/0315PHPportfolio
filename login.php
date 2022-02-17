@@ -1,6 +1,5 @@
-<?php
-include_once "base.php";
-?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +20,7 @@ include_once "base.php";
 
 <div class="container">
             <div class="d-flex justify-content-center">
-                <a class="navbar-brand" href="#"><img src="./img/logo.jpg" width="250" height="150" alt=""></a>
+                <a class="navbar-brand" href="index.php"><img src="./img/logo.jpg" width="250" height="150" alt=""></a>
             </div>
             </div>
   
