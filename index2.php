@@ -41,6 +41,8 @@ include_once "base.php";
 
 
 
+
+
 <?php $do=$_GET["do"]??'index';
          $file='front/'.$do.".php";
          if(file_exists($file)){
