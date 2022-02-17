@@ -1,95 +1,135 @@
+<?php
+include_once "base.php";
 
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
 <style>
-.container {
-  position: relative;
-  width: 100%;
+    *{
+  margin: 0px;
+  padding: 0px;
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 10s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+body{
+  
+  background-color: white;
+  color: black;
+  line-height: 1.6;
   text-align: center;
 }
 
-.container:hover .image {
-  opacity: 0.3;
+.container{
+  max-width: 960px;
+  margin: auto;
+  padding: 0 30px;
 }
 
-.container:hover .middle {
-  opacity: 1;
+#showcase{
+  height: 300px;
 }
 
-.text {
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+#showcase h1{
+  font-size: 50px;
+  line-height: 1.3;
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes heading{
+  0% {top: -50px;}
+  100% {top: 200px;}
+}
 
+#content {
+  position: relative;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content{
+  0% {left: -1000px;}
+  100% {left: 0px;}
+}
+
+.btn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: white 1px solid;
+    border-radius: 30%;
+    margin-top: 40px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+
+.btn:hover{
+  transform: rotateY(360deg);
+}
+
+@keyframes btn {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
 </style>
-</head>
-<body>
+
+
+  <body>
+    <header id="showcase">
+      <h1>Welcome To My Animation Site</h1>
+    </header>
+    <div id="content" class="container">
+      We're playing around with animations in CSS. It's really good to know that you don't have to use JavaScript or jQuery to animate and create interactions ALL of the time. Digging deeper into CSS.
+    </div>
+    <a href="#" class="btn">Read More</a>
+  </body>
 
 
 
-<div class="container" >
-  <img src="https://picsum.photos/seed/picsum/1000/800" alt="Avatar" class="image" style="width:100%">
-  <div class="middle" id="middle">
-    
-   
-    <h1 style="font-size:142px">I am Hcyeeeee</h1>
-    <p>web design</p>
-    <p>graphic design</p>
-    <p>textile design</p>
-    <a href="?do=home"> <button src="./img/login.png">more</button></a>
-  </div>
 
- 
-</div>
-
-
-<!-- <div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am Hcyeeeee</h1>
-    <p>web designer</p>
-    <a href="?do=index"> <button src="./img/login.png">welcome</button></a>
-  </div>
-</div> -->
-
-<script>
-
-
- 
- // 开始写 jQuery 代码...
- $(document).ready(function(){
-  $("button").click(function(){
-    $("container").hide();
-  });
-});
-
-
-
-</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- tabs js -->
+    <script>
+        $(document).ready(function () {
+            $(".nav-tabs a").click(function () {
+                $(this).tab('show');
+            });
+        });
+        var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
+        tabEl.addEventListener('shown.bs.tab', function (event) {
+            event.target // newly activated tab
+            event.relatedTarget // previous active tab
+        })
+        var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)
+  
+    </script>
 
 
 </body>
+
 </html>
-
-
-

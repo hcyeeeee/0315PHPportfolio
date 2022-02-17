@@ -4,7 +4,7 @@ include_once "../base.php";
 
 unset($_SESSION['login']);
 
-to("index.php");
+to("./index.php?do=home");
 
 
 ?>

@@ -95,34 +95,45 @@
         width: 100%;
     }
 }
+
+.carousel-item {
+    height: 700px;
+}
+
+
+.clink{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.click:hover {
+    opacity: 0.7;
+}
+
 </style>
 
+<br><br><br><br>
+<div class="container">
+<div class="row">
+<div class="col col-6 " style="font-weight:bold">
+                    <h3> TextileDesign</h3>
+                </div>
 
 
-<div class="container ">
-    <!-- <div class="row d-flex justify-content-center">
-<div class="col-6">
-            <br>
-            <br>
-            <br>
-            <br>
-              <h1 class="display-1"><em>project </em></h1>
-                    <p >
-<h5>Currently seeking new opportunities
+                <div class="col col-6 " style=" text-align:right">
+                    我的布我的布我的布我的布我的布<br>
+                    我的布我的布我的布我的布我的布我的布我的布<br>
+                    我的布我的布我的布我的布我的布<br>
+                    我的布我的布我的布我的布我的布我的布我的布<br>
+                </div>
 
-I'm a paragraph.<br>
- Click here to add your own text and edit me. <br>
- I’m a great place for you to tell a story and let your users know a little more about you.
- <br>
-</h5>  
+        </div> 
+        <!-- banner-->
 
 
-<hr>
-</div> -->
-    <!-- banner-->
-
-    <br> <br>
-    <!-- <div class="row">
+        <!-- <div class="row">
         <div class="col col-6 " style="font-weight:bold">
             <h3> Textile Design</h3>
         </div>
@@ -140,79 +151,20 @@ I'm a paragraph.<br>
     </div> -->
 
 
-    <div class="row">
-        <div class="col-12">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/12.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/13.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/11.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-
-        </div>
-        <!-- 1end -->
-        <div>
-            <br><br><br><br><br><br><br>
-            <hr>
-        </div>
-        <!-- 2 -->
-
-        <br> <br>
-        <div class="row">
-            <div class="col col-6 " style="font-weight:bold">
-                <h3> Design</h3>
-            </div>
-
-
-            <div class="col col-6 " style=" text-align:right">
-                我的布我的布我的布我的布我的布<br>
-                我的布我的布我的布我的布我的布我的布我的布<br>
-                我的布我的布我的布我的布我的布<br>
-                我的布我的布我的布我的布我的布我的布我的布<br>
-            </div>
-
-
-
-        </div>
-
-
         <div class="row">
             <div class="col-12">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" id="myModal">
-                    <div class="carousel-inner">
-
+                <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner ">
                         <div class="carousel-item active">
-                            <img src="./img/12.jpg" class="d-block w-50 h-50" alt="...">
-                            &nbsp;
-                            <img src="./img/13.jpg" class="d-block w-50 h-50" alt="...">
+                            <img src="./img/12.jpg" class="d-block w-100 " alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/13.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/13.jpg" class="d-block w-100 " alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/11.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/11.jpg" class="d-block w-100 " alt="...">
                         </div>
-                        <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad"></a>
                     </div>
-
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -227,20 +179,17 @@ I'm a paragraph.<br>
 
 
             </div>
-            <!-- 2end -->
+            <!-- 1end -->
             <div>
-                <br>
-                <br>
-                <br>
-                <br>
+                <br><br><br><br><br><br><br>
+                <hr>
             </div>
-
-            <!-- 3 -->
+            <!-- 2 -->
 
             <br> <br>
             <div class="row">
                 <div class="col col-6 " style="font-weight:bold">
-                    <h3> web Design</h3>
+                    <h3> Graphic Design</h3>
                 </div>
 
 
@@ -254,80 +203,137 @@ I'm a paragraph.<br>
 
 
             </div>
+
+
             <div class="row">
-            <div class="col col-6 " style="font-weight:bold">
-                  
-                <iframe width="100%" height="600" src="http://220.128.133.15/s1100426/calender/"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-                <!-- 3end -->
-                <!-- 4 -->
-                <!-- Trigger the Modal -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col col-3">
-                            <img id="myImg" src="./img/12.jpg" alt="Snow" style="width:100%;max-width:600px">
-                            <div id="myModal" class="modal">
-
-                                <!-- The Close Button -->
-                                <span class="close">&times;</span>
-
-                                <!-- Modal Content (The Image) -->
-                                <img class="modal-content" id="img01">
-
-                                <!-- Modal Caption (Image Text) -->
-                                <div id="caption">huihuihihuih</div>
-                            </div>
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img src="./img/1.jpg" class="d-block w-100 " alt="...">
                         </div>
-                        <div class="col col-3">
-                            <img id="myImg" src="./img/12.jpg" alt="Snow" style="width:100%;max-width:600px">
-                            <div id="myModal" class="modal">
+                        <div class="carousel-item">
+                            <img src="./img/2.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/11.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
-                                <!-- The Close Button -->
-                                <span class="close">&times;</span>
 
-                                <!-- Modal Content (The Image) -->
-                                <img class="modal-content" id="img01">
+            </div>
+                <!-- 2end -->
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
 
-                                <!-- Modal Caption (Image Text) -->
-                                <div id="caption">huihuihihuih</div>
+                <!-- 3 -->
+
+                <br> <br>
+                <div class="row">
+                    <div class="col col-6 " style="font-weight:bold">
+                        <h3> web Design</h3>
+                    </div>
+
+
+                    <div class="col col-6 " style=" text-align:right">
+                        我的布我的布我的布我的布我的布<br>
+                        我的布我的布我的布我的布我的布我的布我的布<br>
+                        我的布我的布我的布我的布我的布<br>
+                        我的布我的布我的布我的布我的布我的布我的布<br>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col col-6 " style="font-weight:bold">
+
+                        <iframe width="100%" height="600" src="http://220.128.133.15/s1100426/calender/"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- 3end -->
+                    <!-- 4 -->
+                    <!-- Trigger the Modal -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-3">
+                                <img id="myImg" src="./img/12.jpg" alt="Snow" style="width:100%;max-width:600px">
+                                <div id="myModal" class="modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content" id="img01">
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div id="caption">huihuihihuih</div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <img id="myImg" src="./img/12.jpg" alt="Snow" style="width:100%;max-width:600px">
+                                <div id="myModal" class="modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content" id="img01">
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div id="caption">huihuihihuih</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
 
 
 
-                <!-- 4end -->
-                <!-- 4end -->
+                    <!-- 4end -->
+                    <!-- 4end -->
 
 
 
 
 
-                <script>
-                // Get the modal
-                var modal = document.getElementById("myModal");
+                    <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
 
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById("myImg");
-                var modalImg = document.getElementById("img01");
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("myImg");
+                    var modalImg = document.getElementById("img01");
 
-                var captionText = document.getElementById("caption");
-                img.onclick = function() {
-                    modal.style.display = "block";
-                    modalImg.src = this.src;
-                    captionText.innerHTML = this.alt;
-                }
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function() {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
 
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
 
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() {
-                    modal.style.display = "none";
-                }
-                </script>
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                    </script>

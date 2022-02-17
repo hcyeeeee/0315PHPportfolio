@@ -209,7 +209,15 @@ if(!isset($_SESSION['bottom'])){
     $Bottom->save($bottom);
     $_SESSION['bottom']=$bottom['bottom'];
   }
-  
+ 
+   
+  if(!isset($_SESSION['aboutme'])){
+    $aboutme=$Aboutme->find(1);
+    $aboutme['aboutme']++;
+    $Aboutme->save($aboutme);
+    $_SESSION['aboutme']=$aboutme['about'];
+  }
 
+//   $Aboutme->save(['id'=>2,'about'=>$_POST['about'],'name'=>$_POST['name'],'email'=>$_POST['email'],'phone'=>$_POST['phone']]);
 // $Bottom->save(['id'=>2,'bottom'=>$_POST['bottom']]);
 ?>

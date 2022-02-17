@@ -46,7 +46,7 @@
             </div>
 
             <div>
-                <a class='px-2 text-light' href="../index.php">登出</a>
+                <a class='px-2 text-light' href="./index.php">登出</a>
             </div>
 
 
@@ -65,7 +65,7 @@
     </div>
 
 
-
+    
     <?php include_once "./front/footer.php"?>
 
 
