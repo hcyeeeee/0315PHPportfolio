@@ -184,29 +184,6 @@ public function q($sql){
 
 }
 
-private function setStr($table){
-    switch($table){
-        case "title":
-            $this->title="網站標題管理";
-            $this->button="新增網站標題圖片";
-            $this->header="網站標題";
-            $this->append="替代文字";
-            $this->upload="網站標題圖片";
-        break;
-        case "ad":
-           $this->title="動態文字廣告管理";
-           $this->button="新增動態文字廣告";
-           $this->header="動態文字廣告";
-        break;
-        case "mvim":
-           $this->title="動畫圖片管理";
-           $this->button="新增動畫圖片";
-           $this->header="動畫圖片";
-           $this->upload="動畫圖片";
-        break;
-
-
-
 }
 
 
@@ -220,11 +197,14 @@ private function setStr($table){
 date_default_timezone_set("Asia/Taipei");
 
 session_start();
-                        
+
+                      
 $User=new DB('user');
 $Work=new DB('work');                      
 $Aboutme=new DB('aboutme');  
 $Bottom=new DB('bottom');
+$Contact=new DB('contact');
+
 
 if(!isset($_SESSION['bottom'])){
     $bottom=$Bottom->find(1);

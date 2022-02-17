@@ -4,7 +4,7 @@
      <span class="navbar-toggler-icon"></span>
  </button>
 
- <div class="col col-6 mr-5">
+ <div class="col col-5 mr-5">
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -31,13 +31,13 @@
                  </a>
 
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="#link-tabs"><img src="./img/illustration.png" width="100"
-                             height="20" alt=""></a>
-                     <a class="dropdown-item" href="#link-tabs"><img src="./img/webdesign.png" width="100" height="20"
-                             alt=""></a>
-                     <a class="dropdown-item" href="#link-tabs"><img src="./img/textiledesign.png" width="100"
-                             height="20" alt=""></a>
-                 </div>
+                            <a class="dropdown-item" href="#link-tabs"><img src="./img/illustration.png" width="100"
+                                    height="20" alt=""></a>
+                            <a class="dropdown-item" href="#link-tabs"><img src="./img/webdesign.png" width="100"
+                                    height="20" alt=""></a>
+                            <a class="dropdown-item" href="#link-tabs"><img src="./img/textiledesign.png" width="100"
+                                    height="20" alt=""></a>
+                        </div>
              </li>
              <!-- contact -->
              <li class="nav-item">

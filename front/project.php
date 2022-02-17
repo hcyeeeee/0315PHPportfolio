@@ -235,6 +235,7 @@ body {
         <div>
             <br>
             <br>
+            <hr>
             <br>
             <br>
         </div>
@@ -242,56 +243,66 @@ body {
         <!-- 3 -->
 
         <br> <br>
-        <div class="container">
-                        <div id="portfo" class="py">
+        <div class="row">
+            <div class="col col-6 " style="font-weight:bold">
+                <h3> Graphic Design</h3>
+            </div>
 
 
-                            <div class="row ">
+            <div class="col col-6 " style=" text-align:right">
+                
+            </div>
+
+
+          
+            <div class="row ">
                                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                                     <div class="image">
-                                        <img src="./img/vote.png" style="width: 300px;">
+                                        <img src="./img/00.jpg" style="width: 300px;">
                                         <div class="mask">
-                                            <div class="my-5">投票系統<br>以PHP搭配<br>
-                                                MySQL資料庫撰寫而成</div>
-                                            <a href="http://220.128.133.15/s1100426/vote/" target="_blank"><i
+                                            <h1 class="my-5">see more</h1>
+                                            <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" target="_blank"><i
                                                     class="fas fa-external-link-alt"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                                     <div class="image">
-                                        <img src="./img/calender.png">
+                                        <img src="./img/2.png" style="width: 300px;">
                                         <div class="mask">
-                                            <div class="my-5">萬年曆<br>以PHP撰寫而成，<br>在CSS中使用自己的手繪圖</div>
-                                            <a href="http://220.128.133.15/s1100426/calender/" target="_blank"><i
+                                            <h1 class="my-5">see more</h1>
+                                            <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" target="_blank"><i
                                                     class="fas fa-external-link-alt"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                                     <div class="image">
-                                        <img src="./img/myweb.png" class="card-img-top">
+                                        <img src="./img/newyear.png" style="width: 300px;">
                                         <div class="mask">
-                                            <div class="my-5">一頁式個人網站<br>以Bootstrap&手繪圖<br>
-                                                完成的一頁式個人網站</div>
-                                            <a href="https://hcyeeeee.github.io/front-portfolio/" target="_blank"><i
+                                            <h1 class="my-5">see more</h1>
+                                            <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" target="_blank"><i
                                                     class="fas fa-external-link-alt"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                                     <div class="image">
-                                        <img src="./img/myweb.png" class="card-img-top">
+                                        <img src="./img/55.png" style="width: 300px;">
                                         <div class="mask">
-                                            <div class="my-5">還沒做...<br>用opendata串接資料</div>
-                                            <a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                            <h1 class="my-5">see more</h1>
+                                            <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             </div>
-                            </div>     
+                            </div>      <!-- 2end -->
+
+
+
 
 
 

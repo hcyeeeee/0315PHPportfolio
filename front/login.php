@@ -58,9 +58,10 @@ include_once "base.php";
                 </td>
            
         </tr>    </table>
-    <div class='text-center'>
-   <button onclick="login()">登入</button>
-   <button onclick="reset()">重置</button>
+    <div class='text-center  '>
+   <button class="btn btn-dark" onclick="login()">登入</button>
+   <button class="btn btn-dark" onclick="reset()">重置</button>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="?do=reg" >註冊</a>
                 <a href="?do=forget">忘記密碼</a>
             </div>

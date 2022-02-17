@@ -107,7 +107,7 @@ body{
     <div id="content" class="container">
      web design , pattern design , textile design....
     </div>
-    <a href="./index2.php" class="btn">Read More</a>
+    <a href="./index2.php" class="btn">Enter</a>
     <div class=""><br><br><br><br><br></div>
   </body>
 
