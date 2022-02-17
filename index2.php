@@ -18,101 +18,45 @@ include_once "base.php";
     <link rel="stylesheet" href="./css/style.css">
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<style>
-    *{
-  margin: 0px;
-  padding: 0px;
-}
 
-body{
+
+<body>
+
+<body>
+<div class="container">
+            <div class="d-flex justify-content-center">
+                <a class="navbar-brand" href="./index2.php"><img src="./img/logo.jpg" width="250" height="150" alt=""></a>
+            </div>
+            </div>
+            <div class="container">
+                
+<?php include_once "./front/nav2.php"?>
+
+
+
+
+
+
+
+
+
+
+<?php $do=$_GET["do"]??'index';
+         $file='front/'.$do.".php";
+         if(file_exists($file)){
+         include $file;
+       }?>
+
+
+
+
+
+<?php include_once "./front/footer.php"?>
+
   
-  background-image:  url('./img/bg2.jpg');;
-  background-color: #fff;
-  background-size: 30%;
-  color: black;
-  line-height: 2;
-  text-align: center;
-}
-
-.container{
-  max-width: 960px;
-  margin: auto;
-  padding: 0 30px;
-}
-
-#showcase{
-  height: 300px;
-}
-
-#showcase h1{
-  font-size: 50px;
-  line-height: 1.3;
-  position: relative;
-  animation: heading;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes heading{
-  0% {top: -50px;}
-  100% {top: 200px;}
-}
-
-#content {
-  position: relative;
-  animation-name: content;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes content{
-  0% {left: -1000px;}
-  100% {left: 0px;}
-}
-
-.btn{
-    display: inline-block;
-    color: #111;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border: #111 1px solid;
-    border-radius: 30%;
-    margin-top: 40px;
-    opacity: 0;
-    animation-name: btn;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    transition-property: transform;
-    transition-duration: 1s;
-  }
-
-.btn:hover{
-  transform: rotateY(360deg);
-}
-
-@keyframes btn {
-  0%{opacity: 0}
-  100%{opacity: 1}
-}
-</style>
-
-
-  <body>
-    <header id="showcase">
-      <h1>hi,i'm Hcy</h1>
-      <!-- <img src="./img/logo.jpg" alt=""> -->
-    </header>
-    <div id="content" class="container">
-    web designer ,
-    </div>
-    <a href="./index2.php" class="btn">Read More</a>
-    <div class=""><br><br><br><br><br></div>
-  </body>
 
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

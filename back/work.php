@@ -1,55 +1,29 @@
-<h2 class="text-center font-weight-bold">作品管理</h2>
+<div class="container">
+    <form method="post" action="./api/aboutme.php">
 
-<div class="row">
-<div class="col-md-3">
-<form action="../api/upload,php" method="post" enctype="multipart/form-data">
+<h2>作品管理</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>圖片</th>
+                    <th>描述</th>
+                    <th>上架</th>
+                    <th>管理</th>
+                </tr>
 
-    <div class='custom-file mx-auto d-block mb-2'>
-        <label for="upload" class='custom-file-label'>選擇檔案：</label>
-        <input class="custom-file-input" type="file" name="name" id="upload">
-    </div>
-    <div class="mx-auto text-center mt-2 input-group mb-2">
-        <label class='input-group-prepend input-group-text' for='intro'>說明：</label>
-        <input class='form-control' type="text" name="intro" id="intro">
-    </div>
-    <div class="mx-auto mb-2">
-        <input type="submit" value="上傳" class="btn btn-primary">
-    </div>
-</form>
-</div>
-<div class="col-md-9">
-<h3 class="text-center">圖片列表</h3>
-<table class="table">
-    <tr>
-        <td>圖片</td>
-        <td>說明</td>
-        <td>狀態</td>
-        <td>管理</td>
-    </tr>
-<?php 
-$rows=all('work');
-foreach($rows as $row){
-echo "<tr>";
-echo "<td>";
-echo "<img src='../image/{$row['name']}' style='width:100px;height:75px'>";
-echo "</td>";
-echo "<td>{$row['intro']}</td>";
-echo "<td>";
-echo "<a href='../api/change_status.php?id={$row['id']}'>";
-echo ($row['sh']==1)?"顯示中":"未上架";
-echo "</a>";
-echo "</td>";
-echo "<td>";
-echo "<a class='btn btn-info' href='?do=edit_ad&id={$row['id']}'>修改</a>";
-echo "<button>重新上傳</button>";
-echo "<a class='btn btn-danger' href='../api/del_ad.php?id={$row['id']}'>刪除</a>";
-"</td>";
- echo "</tr>";
-}
+            </thead>
+            <tr>
 
+                <th><input type="text" name="name" value="<?=$Aboutme->find(1)['name'];?>"></th>
+                <th><input type="text" name="email" value="<?=$Aboutme->find(1)['email'];?>"></th>
+                <th><input type="text" name="phone" value="<?=$Aboutme->find(1)['phone'];?>"></th>
+                <th><input type="text" name="about" value="<?=$Aboutme->find(1)['about'];?>"></th>
 
+            </tr>
 
-?>
-</table>
-</div>
+            <td class="cent">
+                <input type="submit" value="修改確定">
+                <input type="reset" value="重置">
+            </td>
+    </form>
 </div>

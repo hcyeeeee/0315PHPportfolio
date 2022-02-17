@@ -1,20 +1,19 @@
-
 <div class="container">
     <form method="post" action="./api/bottom.php">
 
-<h2>頁尾版權修改</h2>
+        <h2>頁尾版權修改</h2>
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>頁尾版權資料:</th>
-                    
+
                 </tr>
 
             </thead>
             <tr>
 
                 <th> <input type="text" name="bottom" value="<?=$Bottom->find(1)['bottom'];?>"></th>
-               
+
 
             </tr>
 

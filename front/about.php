@@ -1,3 +1,5 @@
+
+
 <style>
     .aaa{
 
@@ -42,14 +44,11 @@
 
     <div class="row">
         <div class="col col-12 d-flex justify-content-center align-items-center">
-            <div class="col col-12 d-flex justify-content-center align-items-center">
-            <h1 class="myname">I'm Hcy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> &nbsp;
-
-            2020年畢業於輔大織品系，主修布料設計。<br>
-                在工作中偶然接觸網頁設計，<br>
-                因而進入泰山職業訓練場學習，<br>
-                從此深深著迷於視覺呈現及程式邏輯的世界之中。<br>
-                持續積極學習視覺傳達及網頁設計中！<br>
+            <div class="col col-6 d-flex justify-content-center align-items-center">
+            <h1 class="myname">  <?=$Aboutme->find(1)['name'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> &nbsp;
+<div class="col-6">
+            <?=$Aboutme->find(1)['about'];?>
+            </div>
             </div>
         
 
@@ -119,7 +118,7 @@
                 <!--2  -->
                 <div class="row d-flex justify-content-center ">
                     <div class="col col-5 d-flex justify-content-center aaa ">
-                    <img src="./img/14.jpg"  style="width:100%; "alt="">
+                    <img src="./img/13.jpg"  style="width:100%; "alt="">
                     
                    
                     </div>
@@ -156,8 +155,14 @@
                     <div class="col col-2 d-flex justify-content-center  ">
                       
                         
-                        <p>織品系四年課程
-                            大學四年在織品系培養出審慎的美感意識、色彩敏銳度，以及對流行趨勢的掌握度、設計思維。 我認爲上述能力對於網頁設計是很重要的能力。
+                        <p>畢業後，我在紡織成衣貿易公司擔任業務助理一職，
+                            助理的職位培養我使命必達的責任感，除了主管交辦事項，我也參與採購、生管等工作，與國內外廠商溝通，學會協調不同的聲音；
+                            面對突發情況，能冷靜反應、解決，佈局下一步該如何處理，半年內我可以獨立與工廠溝通與接洽。
+                            1. 追蹤客戶訂單，採購所需的主副料，並監督出貨狀況
+                           2. 保持與客戶間之聯繫，站在客戶角度，了解客戶需求。
+                           3. 與國內外廠商溝通，學會協調不同的聲音
+                          4.整理出貨表格，每週定期回報進度
+                         5.完成主管交辦事項，與其他部門溝通
                         <p>
                     </div>
                     <div class="col col-5 d-flex justify-content-center aaa">

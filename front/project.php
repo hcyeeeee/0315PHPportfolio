@@ -97,7 +97,7 @@
 }
 
 .carousel-item {
-    height: 700px;
+    height: 650px;
 }
 
 

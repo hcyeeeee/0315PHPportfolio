@@ -1,24 +1,10 @@
-<?php
-include_once "base.php";
-
-?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>resume</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
 <style>
+.aa{
+  height: 650px;
+}
+
+
+
     *{
   margin: 0px;
   padding: 0px;
@@ -26,9 +12,9 @@ include_once "base.php";
 
 body{
   
-  background-color: white;
+  
   color: black;
-  line-height: 1.6;
+  line-height: 2;
   text-align: center;
 }
 
@@ -47,7 +33,7 @@ body{
   line-height: 1.3;
   position: relative;
   animation: heading;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -59,7 +45,7 @@ body{
 #content {
   position: relative;
   animation-name: content;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -70,16 +56,16 @@ body{
 
 .btn{
     display: inline-block;
-    color: white;
+    color: #111;
     text-decoration: none;
     padding: 1rem 2rem;
-    border: white 1px solid;
+    border: #111 1px solid;
     border-radius: 30%;
     margin-top: 40px;
     opacity: 0;
     animation-name: btn;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
     transition-property: transform;
     transition-duration: 1s;
@@ -98,38 +84,50 @@ body{
 
   <body>
     <header id="showcase">
-      <h1>Welcome To My Animation Site</h1>
+      <h1>hi,i'm Hcy</h1>
+      <!-- <img src="./img/12.jpg" class="d-block w-100 aa" alt="..."> -->
+      <!-- <img src="./img/logo.jpg" alt=""> -->
     </header>
     <div id="content" class="container">
-      We're playing around with animations in CSS. It's really good to know that you don't have to use JavaScript or jQuery to animate and create interactions ALL of the time. Digging deeper into CSS.
+    web designer ,
     </div>
-    <a href="#" class="btn">Read More</a>
+    <a href="./index3.php" class="btn">Read More</a>
+    <div class=""><br><br><br><br><br></div>
   </body>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <!-- tabs js -->
-    <script>
-        $(document).ready(function () {
-            $(".nav-tabs a").click(function () {
-                $(this).tab('show');
-            });
-        });
-        var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
-        tabEl.addEventListener('shown.bs.tab', function (event) {
-            event.target // newly activated tab
-            event.relatedTarget // previous active tab
-        })
-        var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel)
-  
-    </script>
 
 
-</body>
 
-</html>
+<!-- 
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img src="./img/12.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/13.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/11.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div> -->
+            <!-- 1end -->

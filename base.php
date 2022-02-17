@@ -3,10 +3,10 @@ class DB{
 
     //宣告成員屬性
     private $dsn="mysql:host=localhost;charset=utf8;dbname=portfolio";
-    private $root='root';
-    private $password='';
-    private $table;
-    private $pdo;
+    private  $root='root';
+    private  $password='';
+    private  $table;
+    private  $pdo;
 
     //建立建構式，在建構時帶入table名稱會建立資料庫的連線
     public function __construct($table){
