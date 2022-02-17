@@ -100,11 +100,12 @@ body{
 
   <body>
     <header id="showcase">
-      <h1>hi,i'm Hcy</h1>
+      <h1>Hello,I'm Hcy</h1>
+    
       <!-- <img src="./img/logo.jpg" alt=""> -->
     </header>
     <div id="content" class="container">
-    web designer ,
+     web design , pattern design , textile design....
     </div>
     <a href="./index2.php" class="btn">Read More</a>
     <div class=""><br><br><br><br><br></div>

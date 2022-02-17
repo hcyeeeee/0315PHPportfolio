@@ -45,7 +45,7 @@
     <div class="row">
         <div class="col col-12 d-flex justify-content-center align-items-center">
             <div class="col col-6 d-flex justify-content-center align-items-center">
-            <h1 class="myname">  <?=$Aboutme->find(1)['name'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> &nbsp;
+            <h2 class="myname">  <?=$Aboutme->find(1)['name'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2> &nbsp;
 <div class="col-6">
             <?=$Aboutme->find(1)['about'];?>
             </div>

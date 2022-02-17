@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
 .aa{
   height: 650px;
 }
@@ -85,15 +85,15 @@ body{
   <body>
     <header id="showcase">
       <h1>hi,i'm Hcy</h1>
-      <!-- <img src="./img/12.jpg" class="d-block w-100 aa" alt="..."> -->
+       <img src="./img/12.jpg" class="d-block w-100 aa" alt="..."> -->
       <!-- <img src="./img/logo.jpg" alt=""> -->
-    </header>
+    <!-- </header>
     <div id="content" class="container">
     web designer ,
     </div>
     <a href="./index3.php" class="btn">Read More</a>
     <div class=""><br><br><br><br><br></div>
-  </body>
+  </body> -->
 
 
 
@@ -101,7 +101,6 @@ body{
 
 
 
-<!-- 
         <div class="row">
             <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
@@ -129,5 +128,5 @@ body{
                 </div>
 
 
-            </div> -->
+            </div> 
             <!-- 1end -->
