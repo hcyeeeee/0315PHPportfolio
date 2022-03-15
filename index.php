@@ -26,14 +26,21 @@ include_once "base.php";
 
 body{
   
-  background-image:  url('./img/bg2.jpg');;
-  background-color: #fff;
-  background-size: 30%;
-  color: black;
+  background-image:  url('./img/13.jpg');;
+  opacity:0.5;
+  background-size: 100%;
+  background-repeat: no-repeat;
+	
+	background-attachment: local, local, scroll, scroll;
+  color:#666;
   line-height: 2;
   text-align: center;
+ 
 }
 
+.title{
+  font-size:100px;
+}
 .container{
   max-width: 960px;
   margin: auto;
@@ -99,15 +106,15 @@ body{
 
 
   <body>
-    <header id="showcase">
-      <h1>Hello,I'm Hcy</h1>
+    <header id="showcase" >
+      <p class="title">Hello,I'm Hcy</p>
     
       <!-- <img src="./img/logo.jpg" alt=""> -->
     </header>
     <div id="content" class="container">
      web design , pattern design , textile design....
     </div>
-    <a href="./index2.php" class="btn">Enter</a>
+    <a href="./index3.php" class="btn">Enter</a>
     <div class=""><br><br><br><br><br></div>
   </body>
 
@@ -118,22 +125,7 @@ body{
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <!-- tabs js -->
-    <script>
-        $(document).ready(function () {
-            $(".nav-tabs a").click(function () {
-                $(this).tab('show');
-            });
-        });
-        var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
-        tabEl.addEventListener('shown.bs.tab', function (event) {
-            event.target // newly activated tab
-            event.relatedTarget // previous active tab
-        })
-        var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel)
-  
-    </script>
-
+ 
 
 </body>
 

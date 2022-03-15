@@ -1,36 +1,25 @@
-<div class="container">
-    <form method="post" action="./api/work.php">
+<h2 class="text-center font-weight-bold">上傳作品</h2>
 
-        <h2><?=$Work->find(1)['name'];;?></h2>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>更新圖片</th>
-                    <th>更新描述</th>
-                    <th>顯示</th>
-                    <th>刪除</th>
-                    
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>標題區圖片：<input type="file" name="img"></td>
-                    <td width="45%"><input type="text" name="comment" value="<?=$Work->find(1)['comment'];?>"></td>
-                    <td class="cent"> <input type="radio" name="sh" value="<?=$row['id'];?>" $checked;></td>
-                    <td class="cent">  <input type="checkbox" name="del[]" value=""></td>
-
-                  
-                   
-                    <td class="cent">
-                        <input type="submit" value="修改確定">
-                        <input type="reset" value="重置">
-                    </td>
-                    <form action="api/add.php" method="post" enctype="multipart/form-data">
+<?php
+// $work=find('work',$_GET['id']);
 
 
-        </table>
-     
-    </form>
-
-
+?>
+<div class="col-md-3 m-auto">
+    <img src="../img/<?=$Work['name'];?>" style='width:250px;border:3px solid black'>
+<form action="./api/upload.php" method="post" enctype="multipart/form-data">
+<br>
+    <div class='custom-file mx-auto d-block mb-2'>
+        <label for="upload" class='custom-file-label'></label>
+        <input class="custom-file-input" type="file" name="img" id="img">
+    </div>
+    <div class="mx-auto text-center mt-2 input-group mb-2">
+        <label class='input-group-prepend input-group-text' for='intro'>說明：</label>
+        <input class='form-control' type="text" name="text" id="text" value="">
+    </div>
+    <div class="mx-auto mb-2">
+        <input type="hidden" name="id" value="">
+        <input type="submit" value="上傳" class="btn btn-primary">
+    </div>
+</form>
+</div>

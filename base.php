@@ -204,6 +204,7 @@ $Work=new DB('work');
 $Aboutme=new DB('aboutme');  
 $Bottom=new DB('bottom');
 $Contact=new DB('contact');
+$Experience=new DB('experience');
 
 
 if(!isset($_SESSION['bottom'])){
@@ -221,6 +222,5 @@ if(!isset($_SESSION['bottom'])){
     $_SESSION['aboutme']=$aboutme['about'];
   }
 
-//   $Aboutme->save(['id'=>2,'about'=>$_POST['about'],'name'=>$_POST['name'],'email'=>$_POST['email'],'phone'=>$_POST['phone']]);
-// $Bottom->save(['id'=>2,'bottom'=>$_POST['bottom']]);
+
 ?>

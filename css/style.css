@@ -81,7 +81,7 @@ body {
     background-image: url('./img/bg7.png');
     background-repeat: no-repeat;
     background-size: cover;
-   
+
     background-size: 120%;
     background-position: -130px 40px;
 
@@ -125,7 +125,24 @@ body {
 
     }
 
-   
 
-  
+    /* back-about */
+    .aaa {
+        width: 408px;
+        height: 300px;
+    }
+    
+    .texttime {
+        font-style: italic;
+        font-size: 18px;
+    }
+    
+    .myname {
+        font-size: 80px;
+        color: #222;
+    }
+
+
 }
+
+

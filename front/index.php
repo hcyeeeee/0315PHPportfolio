@@ -1,6 +1,9 @@
 <style>
 .aa{
   height: 700px;
+  background-image:"../img/11.jpg";
+	background-repeat: no-repeat;
+	background-attachment: local, local, scroll, scroll;
 }
 
 
@@ -10,23 +13,6 @@
 
 
   <body>
-    <!-- <header id="showcase">
-      <h1>hi,i'm Hcy</h1>
-       <img src="./img/12.jpg" class="d-block w-100 aa" alt="..."> -->
-     
-    <!-- </header>
-    <div id="content" class="container">
-    web designer ,
-    </div>
-    <a href="./index3.php" class="btn">Read More</a>
-    <div class=""><br><br><br><br><br></div>
-  </body> -->
-
-
-
-
-
-
 
         <div class="row">
             <div class="col-12">
@@ -53,6 +39,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+          
 
 
             </div> 

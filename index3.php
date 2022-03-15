@@ -31,22 +31,18 @@ include_once "base.php";
         </div>
 
       
-<?php include_once "./front/nav.php"?>
+        <?php include_once "./front/nav.php"?>
+        <?php include_once "./front/index.php"?>
+
+<?php include_once "./front/about.php"?>
+<?php include_once "./front/experience.php"?>
+
+<?php include_once "./front/project.php"?>
+<?php include_once "./front/contact.php"?>
 
 
 
 
-
-
-
-
-
-
-<?php $do=$_GET["do"]??'index';
-         $file='front/'.$do.".php";
-         if(file_exists($file)){
-         include $file;
-       }?>
 
 
 
