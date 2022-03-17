@@ -1,7 +1,7 @@
 <?php
 include_once "../base.php";
 
-echo $Experience->save($_POST);
+// echo $Experience->save($_POST);
 
 if(!empty($_FILES['img']['tmp_name'])){
     // 路徑有問題
@@ -9,7 +9,6 @@ if(!empty($_FILES['img']['tmp_name'])){
 
     
     $data=$Experience->find($_POST['id']);
-
     $data['img']=$_FILES['img']['name'];
     $data['title']=$_POST['title'];
     $data['time']=$_POST['time'];
@@ -22,5 +21,5 @@ if(!empty($_FILES['img']['tmp_name'])){
 }
 
 
-to("../back.php?do=experience");
+// to("../back.php?do=experience");
 ?>

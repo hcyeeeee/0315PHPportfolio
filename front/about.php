@@ -22,7 +22,7 @@
 
     <div class="row">
         <div class="col col-12 d-flex justify-content-center align-items-center">
-            <img src="./img/me.png" class="d-flex " width="450" height="450" alt="about me">
+            <img src="./img/<?=$Aboutme->find(1)['img'];?>" class="d-flex " width="450" height="450" alt="about me">
         </div>
         <div class="col col-12 d-flex justify-content-center align-items-center">
             <p class="display-5"><em> - About me -</em></p>
@@ -54,12 +54,12 @@
 
         </div>
 
-
-        <img class="line" src="./img/line3.png" width="" height="200" alt="">
+<!-- 
+        <img class="line" src="./img/line3.png" width="" height="200" alt=""> -->
     </div>
     <div>
 
-
+    <?php include_once "experience2.php"?>
 
         <!-- skills -->
         <div>
@@ -69,7 +69,7 @@
         <div class="container">
             <div class="row  d-flex justify-content-center ">
                 <div class="col col-12 d-flex justify-content-center ">
-                    <p class="display-5 ml-0 "><em> - Skills -</em></p>
+                    <p class="display-5 ml-0 "><em> - My Skills -</em></p>
                 </div>
                 <!-- <div class="col col-12 d-flex justify-content-center">
         <p><img src="./line3.png"  alt=""></p>
@@ -124,4 +124,4 @@
 
 
         <!-- about me end-->
-        <?php include_once "experience2.php"?>
+      

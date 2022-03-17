@@ -25,7 +25,7 @@ include_once "base.php";
 <body>
 <div class="container">
             <div class="d-flex justify-content-center">
-                <a class="navbar-brand" href="./index2.php"><img src="./img/logo.jpg" width="250" height="150" alt=""></a>
+                <a class="navbar-brand" href="./index2.php"><img src="./img/logo.jpg" width="230" height="130" alt=""></a>
             </div>
             </div>
             <div class="container">

@@ -40,7 +40,7 @@
     <div class="container">
         <nav class='bg-black py-3 px-2 d-flex justify-content-between mb-4'>
             <div>
-                <a class='px-2 text-light' href="?do=about">個人資料管理</a>
+                <a class='px-2 text-light' href="?do=about">基本資料管理</a>
                 <a class='px-2 text-light' href="?do=bottom">頁尾版權</a>
                 <a class='px-2 text-light' href="?do=work">作品管理</a>
                 <a class='px-2 text-light' href="?do=experience">經驗管理</a>

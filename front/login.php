@@ -41,7 +41,7 @@ include_once "base.php";
 
 <body>
 
-            <h2 class="text-center font-weight-bold">登入會員</h2>
+            <h2 class="text-center font-weight-bold">登入後台</h2>
 <form action="./login.php" method="post" >
     <table class='table m-auto w-auto'>
         <tr>

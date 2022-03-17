@@ -29,9 +29,7 @@ body{
   background-image:  url('./img/13.jpg');;
   opacity:0.5;
   background-size: 100%;
-  background-repeat: no-repeat;
-	
-	background-attachment: local, local, scroll, scroll;
+ 
   color:#666;
   line-height: 2;
   text-align: center;
@@ -107,14 +105,14 @@ body{
 
   <body>
     <header id="showcase" >
-      <p class="title">Hello,I'm Hcy</p>
+      <p class="title">安安</p>
     
       <!-- <img src="./img/logo.jpg" alt=""> -->
     </header>
     <div id="content" class="container">
      web design , pattern design , textile design....
     </div>
-    <a href="./index3.php" class="btn">Enter</a>
+    <a href="./index2.php" class="btn">Enter</a>
     <div class=""><br><br><br><br><br></div>
   </body>
 

@@ -205,6 +205,7 @@ $Aboutme=new DB('aboutme');
 $Bottom=new DB('bottom');
 $Contact=new DB('contact');
 $Experience=new DB('experience');
+$Skill=new DB('skill');
 
 
 if(!isset($_SESSION['bottom'])){
