@@ -22,7 +22,7 @@
 
         <div class="col-5">
             <div><br><br><br><br></div>
-            <form action="../api/contact.php" class="contact" name="contact" id="contact">
+            <form action="./api/contact.php" method="post" >
 
                 <div class="col-10 mb-1">
                     <label for="name" class="form-label">Name</label>
@@ -54,9 +54,4 @@
 
 
     </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>

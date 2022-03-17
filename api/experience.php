@@ -21,5 +21,5 @@ if(!empty($_FILES['img']['tmp_name'])){
 }
 
 
-// to("../back.php?do=experience");
+to("../back.php?do=experience");
 ?>
