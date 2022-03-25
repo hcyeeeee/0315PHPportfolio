@@ -8,10 +8,12 @@ if(!empty($_FILES['img']['tmp_name'])){
    
     move_uploaded_file($_FILES['img']['tmp_name'],"../img/".$_FILES['img']['name']);
 
-    $data=$Work->find($_POST);
+
+    
+    $data=$Work->find($_GET['id']);
  
     $data['img']=$_FILES['img']['name'];
-    $data['id']=$_POST['id'];
+   
     $data['name']=$_POST['name'];
     $data['content']=$_POST['content'];
     $data['link']=$_POST['link'];

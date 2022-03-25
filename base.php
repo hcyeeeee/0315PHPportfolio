@@ -172,7 +172,7 @@ public function save($array){
         $sql="insert into $this->table (`".implode("`,`",array_keys($array))."`) 
                      values('".implode("','",$array)."')";
                     }
-                    // echo $sql;
+                    echo $sql;
                     return $this->pdo->exec($sql);
                     
                     }

@@ -9,7 +9,7 @@ include_once "../base.php";
 
 
 
-<form action="./api/edit_work.php" method="post" enctype="multipart/form-data">
+<form action="./api/edit_work.php?id=<?=$_GET['id'];?>" method="post" enctype="multipart/form-data">
 
    
 
@@ -51,7 +51,7 @@ include_once "../base.php";
 
 
   
-  <input type="hidden" name="id" >
+  <input class="text" type="hidden" name="id" id="id">
 
  
     

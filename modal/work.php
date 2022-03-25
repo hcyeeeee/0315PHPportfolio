@@ -45,7 +45,7 @@
     <label for="exampleFormControlTextarea1">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="content" id="content"></textarea>
   </div>
-
+  <input class="text" type="hidden" name="id" id="id">
   <div><input type="submit" value="新增"><input type="reset" value="重置"></div>
 </form>
 </div>
