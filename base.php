@@ -163,7 +163,7 @@ public function save($array){
         }
 
         //建立更新資料(update)的sql語法
-        $sql="update $this->table set ".implode(',',$tmp)." where `id`='{$array['id']}'";
+        $sql="update $this->table set ".implode(',',$tmp)." where `id`={$array['id']}";
 
     }else{
         //insert

@@ -4,7 +4,7 @@ include_once "../base.php";
 // echo $Experience->save($_POST);
 
 if(!empty($_FILES['img']['tmp_name'])){
-    // 路徑有問題
+    
     move_uploaded_file($_FILES['img']['tmp_name'],"../img/".$_FILES['img']['name']);
 
     

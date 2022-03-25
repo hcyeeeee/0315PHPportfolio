@@ -19,7 +19,6 @@
         integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/jquery.js"></script>
@@ -49,6 +48,9 @@
 
 
 
+
+            
+
             <div>
                 <a class='px-2 text-light' href="./index.php">登出</a>
             </div>
@@ -56,6 +58,10 @@
 
         <!-- nav -->
     </div>
+
+    
+    
+
 
 
     <?php $do=$_GET["do"]??'';
@@ -65,25 +71,9 @@
        }?>
 
 
+    <?php include_once "./front/footer.php"?>
 
-
-
-    <!-- footer -->
-    <!-- <div class="container-fluid">
-        <div class="d-flex justify-content-center align-items-center bg-green mx-5 my-3 ">
-            © 2022 Copyright All Rights Reserved Designed by &nbsp;
-             <img src="./img/copyright.png" width="600px" height="40" alt=""> -->
-    <!-- <img src="./img/黃莘懿.jpeg" style="width: 25px;">
-        </div>
-    </div> -->
-
-    <!-- footer end-->
-
-    
-        <?php include_once "./front/footer.php"?>
- 
-    </div>
-
+   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

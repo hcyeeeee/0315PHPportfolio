@@ -62,15 +62,16 @@
 
     foreach ($AAA as $aaa) {
     ?>
-
     
+
+
             <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="image">
                 <img src="./img/<?=$aaa['img']?>" style="width: 300px; height:300px;">
                     <div class="mask">
                         <p class="my-5"><?=$aaa['content']?></p>
-                        <a href="<?=$aaa['link']?>" target="_blank"><i
-                                class="fas fa-external-link-alt"></i></a>
+                        <button onclick="op('#cover','#cvr','modal/edit_work.php')" class="btn btn-dark">編輯作品</button>
+                         
                     </div>
                 </div>
             </div>

@@ -1,55 +1,56 @@
+<style>
+#cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    background: rgba(51, 51, 51, 0.4);
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+}
+
+#coverr {
+    width: 70%;
+    min-width: 300px;
+    max-width: 800px;
+    height: 70%;
+    min-height: 300px;
+    position: absolute;
+    z-index: 5;
+    background: #ffffff;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    overflow: auto;
+}
+</style>
 
 
-<form action="./api/aboutme.php" method="post" enctype="multipart/form-data">
-<div class="container-fluid" id="about">
 
+
+<div class="container" id="about">
 <div class="row">
-<div class="col col-12 d-flex justify-content-center align-items-center">
-        <table>
-                <thead>
-                        <tr>
-                            <th> 頭貼：</th><br>
-
-                          
-                            <th> 名字：</th>
-                            <th> 信箱：</th>
-                            <th> 電話：</th>
-                            <th> 關於我：</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                            <img src="./img/<?=$Aboutme->find(1)['img'];?>" width="100" height="100" style="border:3px solid black">
-                           <br>
-                        <input type="file" name="img" value="<?=$Aboutme->find(1)['img'];?>"></td>
-                <input class="btn btn-dark" type="hidden" value="img" >
-                        <td><input type="text" name="name" value="<?=$Aboutme->find(1)['name'];?>"></td>
-                <td><input type="text" name="email" value="<?=$Aboutme->find(1)['email'];?>"></td>
-                <td><input type="text" name="phone" value="<?=$Aboutme->find(1)['phone'];?>"></td>
-                <td><input type="text" name="about" value="<?=$Aboutme->find(1)['about'];?>"></td>
-                <td>
-               <input type="submit" value="修改確定">
-                <input type="reset" value="重置">
-                        </td>
-            </tr>     
-                      
-                     
-                </tbody>
-
-                </table>   
-
-
-</div>
-</div>
-</form>
-
-
-<div class="container-fluid" id="about">
-
+    <!-- 新增 -->
+    <div id="cover" style="display:none; ">
+         <div id="coverr">
+             <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;"
+                 onclick="cl(&#39;#cover&#39;)">X</a>
+             <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
+         </div>
+     </div>
+    
+    
+     <div class="col col-12 " style=" text-align:right">
+         <button onclick="op('#cover','#cvr','modal/about.php')" class="btn btn-dark">新增作品</button>
+    
+     </div>
+     </div>
     <div class="row">
         <div class="col col-12 d-flex justify-content-center align-items-center">
-            <img src="./img/<?=$Aboutme->find(1)['img'];?>" class="d-flex " width="450" height="450" alt="about me">
+            <img src="./img/<?=$Aboutme->find(1)['img'];?>" class="d-flex " width="300" height="300" alt="about me">
         </div>
         <div class="col col-12 d-flex justify-content-center align-items-center">
             <p class="display-5"><em> - About me -</em></p>
@@ -58,10 +59,10 @@
         <div class="col col-12 d-flex justify-content-center align-items-center">
 
              <p class="display-5">
-                <i class="fas fa-envelope-square"></i>&nbsp;
-                <i class="fab fa-github-square"></i>&nbsp;
-                <i class="fab fa-behance-square"></i>&nbsp;
-                <i class="fab fa-instagram-square"></i> &nbsp; 
+                <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fas fa-envelope-square"></i></a>&nbsp;
+                 <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab fa-github-square"></i></a>&nbsp;
+                 <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab fa-behance-square"></i></a>&nbsp;
+                 <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab  fa-behance-square"></i></a> &nbsp; 
                 </p>
         </div>
 
