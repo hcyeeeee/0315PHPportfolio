@@ -1,60 +1,106 @@
+<style>
+#cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    background: rgba(51, 51, 51, 0.4);
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+}
+
+#coverr {
+    width: 70%;
+    min-width: 300px;
+    max-width: 800px;
+    height: 70%;
+    min-height: 300px;
+    position: absolute;
+    z-index: 5;
+    background: #ffffff;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    overflow: auto;
+}
+</style>
+
+
 <div class="container">
+    <!-- 主標題 -->
+    <?php
+   $rows = $Type->all();
+    foreach ($rows as $row) {
+    ?>
+    <div class="row">
+        <div class="col col-6 " style="font-weight:bold">
+            <h3><?=$row['name']?> </h3>
+        </div>
+        <?php
+       }
+    ?>
+        <!-- 新增 -->
+        <div id="cover" style="display:none; ">
+            <div id="coverr">
+                <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;"
+                    onclick="cl(&#39;#cover&#39;)">X</a>
+                <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
+            </div>
+        </div>
 
 
-<form method="post"  action="api/edit.php?do=poedit">
-        <table width="100%">
-            <tbody>
-                <tr class="yel">
-                    <td width="10%">作品縮圖</td>
-                    <td width="10%">作品名稱</td>
-                    <td width="10%">作品網址</td>
-                    <td width="10%">網址</td>
-                    <td width="10%">顯示</td>
-                    <td width="10%">刪除</td>
-                   
-                </tr>
-                                <tr>
-                    <td width="45%">
-                        <img src="./img/2ne1" style="width:100px;height:128px">
-                    </td>
-                    <td>
-                        <input type="text" name="name[]" value="カレンダー">
-                    </td>
-                    <td>
-                        <input type="text" name="href[]" value="http://220.128.133.15/s1100409/">
-                    </td>
-                    <td>
-                        0
-                    </td>
-                    <td>
-                        <input type="checkbox" name="sh[]" value="1" checked>
-                    </td>
-                    <td>
-                        <input type="checkbox" name="del[]" value="1">
+        <div class="col col-6 " style=" text-align:right">
+            <button onclick="op('#cover','#cvr','modal/work.php')" class="btn btn-dark">新增作品</button>
 
-                        <input type="hidden" name="id[]" value="1">
-                    </td>
-                  
+        </div>
 
-                </tr>
-                            </tbody>
-        </table>
-        <table style="margin-top:40px; width:70%;">
-            <tbody>
-                <tr>
-                    <td width="200px">
-                        <input type="button"
-                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/poedit.php?table=poedit&#39;)" 
-                              value="新增作品">
-                    </td>
-                    <td class="cent">
-                        
-                        <input type="submit" value="修改確定">
-                        <input type="reset" value="重置">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <?php
+   $AAA = $Work->all();
+    foreach ($AAA as $aaa) {
+    ?>
 
-    </form>
+     
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="image">
+                <img src="./img/<?=$aaa['img']?>" style="width: 300px; height:300px;">
+                    <div class="mask">
+                        <p class="my-5"><?=$aaa['content']?></p>
+                        <a href="<?=$aaa['link']?>" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+       
+        <?php
+    }
+    ?>
+
     </div>
+</div>
+<!-- 2end -->
+
+
+
+
+
+
+
+<script>
+function op(x, y, url) {
+    $(x).fadeIn()
+
+    if (y)
+        $(y).fadeIn()
+
+    if (y && url)
+        $(y).load(url)
+}
+
+function cl(x) {
+    $(x).fadeOut();
+}
+</script>

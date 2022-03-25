@@ -206,6 +206,7 @@ $Bottom=new DB('bottom');
 $Contact=new DB('contact');
 $Experience=new DB('experience');
 $Skill=new DB('skill');
+$Type=new DB('type');
 
 
 if(!isset($_SESSION['bottom'])){

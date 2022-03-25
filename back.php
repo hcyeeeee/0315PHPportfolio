@@ -1,9 +1,5 @@
 <?php include_once "base.php";
 
-// if(!isset($_SESSION['user'])){
-//   to("index.php");
-//   exit();
-// }
 
 ?>
 
@@ -23,13 +19,17 @@
         integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/js.js"></script>
 
 </head>
 
 
 <body>
+
 
     <div class="container">
         <div class="d-flex justify-content-center">
@@ -46,6 +46,8 @@
                 <a class='px-2 text-light' href="?do=contact">留言管理</a>
                 <a class='px-2 text-light' href="?do=bottom">頁尾版權</a>
             </div>
+
+
 
             <div>
                 <a class='px-2 text-light' href="./index.php">登出</a>

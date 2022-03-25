@@ -108,9 +108,21 @@ body {
         max-width: 100%;
     }
 }
-</style>
 
+
+
+
+</style>
 <br><br><br><br>
+
+
+<?php
+$rows=$Type->all();
+foreach($rows as $row){
+       
+    
+
+                    ?>
 <div class="container" id="project">
     
 
@@ -119,72 +131,42 @@ body {
                     <br> <br>
                     <div class="row">
                         <div class="col col-6 " style="font-weight:bold">
-                            <h3> Web Design</h3>
+                            <!-- <h3> Web Design</h3> -->
+                            <h3><?=$row['name']?></h3>
                         </div>
 
-
                         <div class="col col-6 " style=" text-align:right">
-                        介紹介紹介紹介紹介紹介紹介紹介紹<br>
-                           介紹介紹<br>
-
+                        <?=$row['intro']?><br>
                         </div>
 
                         <br> <br>
                         <br> <br>
                     </div>
 
+                    <?php
+$AAA=$Work->all();
+foreach($AAA as $aaa){
+       
+    
 
+                    ?>
                     <div class="container">
                         <div id="portfo" class="py">
-
-
                             <div class="row ">
                                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                                     <div class="image">
-                                        <img src="./img/vote.png" style="width: 300px;">
+                                        <img src="./img/<?=$aaa['img']?>" style="width: 300px;">
                                         <div class="mask">
-                                            <div class="my-5">投票系統<br>以PHP搭配<br>
-                                                MySQL資料庫撰寫而成</div>
-                                            <a href="http://220.128.133.15/s1100426/vote/" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="image">
-                                        <img src="./img/calender.png">
-                                        <div class="mask">
-                                            <div class="my-5">萬年曆<br>以PHP撰寫而成，<br>在CSS中使用自己的手繪圖</div>
-                                            <a href="http://220.128.133.15/s1100426/calender/" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="image">
-                                        <img src="./img/myweb.png" class="card-img-top">
-                                        <div class="mask">
-                                            <div class="my-5">一頁式個人網站<br>以Bootstrap&手繪圖<br>
-                                                完成的一頁式個人網站</div>
-                                            <a href="https://hcyeeeee.github.io/front-portfolio/" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="image">
-                                        <img src="./img/myweb.png" class="card-img-top">
-                                        <div class="mask">
-                                            <div class="my-5">還沒做...<br>用opendata串接資料</div>
-                                            <a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            <div class="my-5"><?=$aaa['name']?><br>
+                                            <?=$aaa['content']?>
 
-                            </div>
-                            </div>      <!-- 2end -->
-
+                                            <a href="<?=$aaa['link']?>" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                   
+                   
         <div>
             <br>
             <br>
@@ -192,75 +174,21 @@ body {
             <br>
             <br>
         </div>
-
-        <!-- 3 -->
-
-        <br> <br><br> <br>
-        <div class="row">
-            <div class="col col-6 " style="font-weight:bold">
-                <h3> Graphic Design</h3>
-            </div>
+<!--  -->
 
 
-            <div class="col col-6 " style=" text-align:right">
-                
-            </div>
+<?php
+}
+    
 
+                    ?>   
+<?php
+}
+    
 
-          
-            <div class="row ">
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="image">
-                                        <img src="./img/00.jpg" style="width: 300px;">
-                                        <div class="mask">
-                                            <h1 class="my-5">see more</h1>
-                                            <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="image">
-                                        <img src="./img/2.png" style="width: 300px;">
-                                        <div class="mask">
-                                            <h1 class="my-5">see more</h1>
-                                            <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="image">
-                                        <img src="./img/newyear.png" style="width: 300px;">
-                                        <div class="mask">
-                                            <h1 class="my-5">see more</h1>
-                                            <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="image">
-                                        <img src="./img/55.png" style="width: 300px;">
-                                        <div class="mask">
-                                            <h1 class="my-5">see more</h1>
-                                            <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    ?>                  
 
-                            </div>
-                            </div>      <!-- 2end -->
-
-
-
-
-
-
-
-                            </body>
+</body>
 
                             </html>
 

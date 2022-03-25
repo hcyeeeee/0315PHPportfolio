@@ -21,7 +21,7 @@
                     </li>
                     <!-- project -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="?do=project" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="?do=work" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             <img src="./img/project.png" width="120" height="80" alt="" class="mt-2">
                         </a>
