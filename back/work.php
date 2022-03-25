@@ -37,11 +37,9 @@
     ?>
     <div class="row">
         <div class="col col-6 " style="font-weight:bold">
-            <h3><?=$row['name']?> </h3>
+            <h3><?=$row['name']?></h3>
         </div>
-        <?php
-       }
-    ?>
+   
         <!-- 新增 -->
         <div id="cover" style="display:none; ">
             <div id="coverr">
@@ -57,12 +55,15 @@
 
         </div>
 
+
+     
         <?php
-   $AAA = $Work->all();
+   $AAA = $Work->all(['type'=>$row['name']]);
+
     foreach ($AAA as $aaa) {
     ?>
 
-     
+    
             <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="image">
                 <img src="./img/<?=$aaa['img']?>" style="width: 300px; height:300px;">
@@ -74,11 +75,15 @@
                 </div>
             </div>
 
+            
        
         <?php
     }
     ?>
 
+     <?php
+       }
+    ?>
     </div>
 </div>
 <!-- 2end -->

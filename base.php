@@ -50,7 +50,7 @@ public function all(...$arg){
         break;
 
         }
-    
+    // echo $sql;
     return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     
     }
@@ -115,7 +115,7 @@ public function math($math,$col,...$arg){
         
             }
         
-        //echo $sql;
+        // echo $sql;
         return $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
         
         }
