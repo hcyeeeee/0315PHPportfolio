@@ -59,13 +59,12 @@
     </div>
     <div>
 
-    <?php include_once "experience2.php"?>
+   
 
         <!-- skills -->
         <div>
-            <br>
+            <br><br><br><br>
         </div>
-
         <div class="container">
             <div class="row  d-flex justify-content-center ">
                 <div class="col col-12 d-flex justify-content-center ">
@@ -122,6 +121,6 @@
         </div>
         <hr>
 
-
+        <?php include_once "experience2.php"?>
         <!-- about me end-->
       

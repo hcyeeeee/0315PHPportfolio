@@ -51,7 +51,7 @@
 
 
         <div class="col col-6 " style=" text-align:right">
-            <button onclick="op('#cover','#cvr','modal/work.php')" class="btn btn-dark">新增作品</button>
+            <button onclick="op('modal/work.php')" class="btn btn-dark">新增作品</button>
 
         </div>
 
@@ -72,6 +72,8 @@
                     <div class="mask">
                         <p class="my-5"><?=$aaa['content']?></p>
                         <button onclick="op('#cover','#cvr','modal/edit_work.php?id=<?=$aaa['id'];?>')" class="btn btn-dark">編輯作品</button>
+                        <button onclick="op('#cover','#cvr','api/del_work.php?id=<?=$aaa['id'];?>')" class="btn btn-dark">刪除作品</button>
+                        <a class="btn btn-light" href="./api/del_work.php?id=<?=$aaa['id']?>">刪除作品</a>
                          
                     </div>
                 </div>

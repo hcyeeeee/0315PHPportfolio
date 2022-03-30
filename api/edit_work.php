@@ -24,7 +24,6 @@ if(!empty($_FILES['img']['tmp_name'])){
    
 }
 
-// UPDATE `work` SET `name` = 'vvvv', `link` = 'v', `content` = 'v' WHERE `work`.`id` = 10
 
 to("../back.php?do=work");
 ?>

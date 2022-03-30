@@ -108,133 +108,105 @@ body {
         max-width: 100%;
     }
 }
-
-
-
-
 </style>
 <br><br><br><br>
 
 
-<?php
-$rows=$Type->all();
-foreach($rows as $row){
-       
-    
 
-                    ?>
-<div class="container" id="project">
-    
 
-                    <!-- 2 -->
-
-                    <br> <br>
-                    <div class="row">
-                        <div class="col col-6 " style="font-weight:bold">
-                            <!-- <h3> Web Design</h3> -->
-                            <h3><?=$row['name']?></h3>
-                        </div>
-
-                        <div class="col col-6 " style=" text-align:right">
-                        <?=$row['intro']?><br>
-                        </div>
-
-                        <br> <br>
-                        <br> <br>
-                    </div>
-
-                    <?php
-$AAA=$Work->all();
-foreach($AAA as $aaa){
-       
-    
-
-                    ?>
-                    <div class="container">
-                        <div id="portfo" class="py">
-                            <div class="row ">
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="image">
-                                        <img src="./img/<?=$aaa['img']?>" style="width: 300px;">
-                                        <div class="mask">
-                                            <div class="my-5"><?=$aaa['name']?><br>
-                                            <?=$aaa['content']?>
-
-                                            <a href="<?=$aaa['link']?>" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                   
-                   
-        <div>
-            <br>
-            <br>
-            <hr>
-            <br>
-            <br>
+<div class="container col-11">
+    <!-- 主標題 -->
+    <?php
+   $rows = $Type->all();
+    foreach ($rows as $row) {
+    ?>
+    <div class="row ">
+        <div class="col col-6 " style="font-weight:bold">
+            <h3><?=$row['name']?></h3>
         </div>
-<!--  -->
+
+    </div>
+    <div class="row">
+        <?php
+   $AAA = $Work->all(['type'=>$row['name']]);
+
+    foreach ($AAA as $aaa) {
+    ?>
 
 
-<?php
-}
-    
 
-                    ?>   
-<?php
-}
-    
 
-                    ?>                  
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="image">
+                <img src="./img/<?=$aaa['img']?>" style="width: 300px; height:300px; ml-5; mr-1;">
+                <div class="mask">
+                    <div class="my-5"><?=$aaa['name']?><br>
+                        <?=$aaa['content']?>
+
+                        <a href="<?=$aaa['link']?>" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <?php
+    }
+    ?>
+    <hr>
+    <?php }
+    ?>
+ 
+    </div>
+</div>
 
 </body>
-
-                            </html>
-
-
-                            <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModal");
-
-                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                            var img = document.getElementById("myImg");
-                            var modalImg = document.getElementById("img01");
-
-                            var captionText = document.getElementById("caption");
-                            img.onclick = function() {
-                                modal.style.display = "block";
-                                modalImg.src = this.src;
-                                captionText.innerHTML = this.alt;
-                            }
-
-                            // Get the <span> element that closes the modal
-                            var span = document.getElementsByClassName("close")[0];
-
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function() {
-                                modal.style.display = "none";
-                            }
+</html>
 
 
-                            $(window).load(function() {
-                                // The slider being synced must be initialized first
-                                $('#carousel').flexslider({
-                                    animation: "slide",
-                                    controlNav: false,
-                                    animationLoop: false,
-                                    slideshow: false,
-                                    itemWidth: 210,
-                                    itemMargin: 5,
-                                    asNavFor: '#slider'
-                                });
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
-                                $('#slider').flexslider({
-                                    animation: "slide",
-                                    controlNav: false,
-                                    animationLoop: false,
-                                    slideshow: false,
-                                    sync: "#carousel"
-                                });
-                            });
-                            </script>
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+
+var captionText = document.getElementById("caption");
+img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+$(window).load(function() {
+    // The slider being synced must be initialized first
+    $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider'
+    });
+
+    $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel"
+    });
+});
+</script>
