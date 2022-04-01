@@ -7,7 +7,7 @@
 
 .texttime {
     font-style: italic;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .bb {
@@ -16,7 +16,7 @@
     height: 40px;
 }
 
-<style>#cover {
+#cover {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -47,11 +47,6 @@
 
 
 
-
-</style>
-
-
-
 <p>
 <div class="container">
 
@@ -70,51 +65,6 @@
 
     </div>
 
-<!-- 
-    <h1 style="text-align:center;">新增</h1>
-    <form action="./api/experience.php" method="post" enctype="multipart/form-data">
-        <div class="row d-flex justify-content-center">
-            <div class="col col-8 d-flex justify-content-center">
-                <table>
-                    <thead>
-                        <tr>
-                            <th> 主題：</th>
-                            <th> 時間：</th>
-                            <th> 內容：</th>
-                            <th> 圖片上傳:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> <input type="text" name="title" id="title" value=""></td>
-                            <td><input type="text" name="time" id="time" value=""></td>
-                            <td> <input type="text" name="text" id="text" value=""></td>
-                            <td><input class="custom-file-input" type="file" name="img" id="img"></td>
-                            <td><input class="text" type="hidden" name="id" id="id"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="submit" value="修改確定">
-                                <input type="reset" value="重置">
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-            </p>
-
-        </div>
-</div>
-</form>
-</div>
-
-
-
-</div> -->
-
     <br><br><br><br>
 
     <h1 style="text-align:center;">預覽</h1>
@@ -129,7 +79,6 @@ foreach ($rows as $row) {
             <div class="col col-1 mr-1 bb">
                 <a class="btn btn-light" href="./api/del.php?id=<?=$row['id']?>">刪除</a>
 
-                <!-- <button name="del[]" class="btn btn-light" >X</button> -->
             </div>
 
             <div class="col col-2 d-flex justify-content-center ">

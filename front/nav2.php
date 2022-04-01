@@ -20,23 +20,15 @@
                         </a>
                     </li>
                     <!-- project -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="?do=work" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link" href="?do=work">
                             <img src="./img/project.png" width="120" height="80" alt="" class="mt-2">
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#link-tabs"><img src="./img/illustration.png" width="100"
-                                    height="20" alt=""></a>
-                            <a class="dropdown-item" href="#link-tabs"><img src="./img/webdesign.png" width="100"
-                                    height="20" alt=""></a>
-                            <a class="dropdown-item" href="#link-tabs"><img src="./img/textiledesign.png" width="100"
-                                    height="20" alt=""></a>
-                        </div>
                     </li>
+
                     <!-- contact -->
                     <li class="nav-item">
-                        <a class="nav-link" href="?do=contact"> <img src="./img/contact.png" width="170" height="65"
+                        <a class="nav-link" href="?do=contact"> <img src="./img/contact.png" width="170" height="70"
                                 class="mt-2" alt=""></a>
                     </li>
                     <br> <br> <br>

@@ -39,7 +39,7 @@
         <div class="col col-6 " style="font-weight:bold">
             <h3><?=$row['name']?></h3>
         </div>
-   
+
         <!-- 新增 -->
         <div id="cover" style="display:none; ">
             <div id="coverr">
@@ -51,44 +51,45 @@
 
 
         <div class="col col-6 " style=" text-align:right">
-            <button onclick="op('modal/work.php')" class="btn btn-dark">新增作品</button>
+            <button onclick="op('#cover','#cvr','modal/work.php')" class="btn btn-dark">新增作品</button>
 
         </div>
 
+    
 
-     
-        <?php
+    <?php
    $AAA = $Work->all(['type'=>$row['name']]);
 
     foreach ($AAA as $aaa) {
     ?>
-    
 
 
 
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                <div class="image">
-                <img src="./img/<?=$aaa['img']?>" style="width: 300px; height:300px;">
-                    <div class="mask">
-                        <p class="my-5"><?=$aaa['content']?></p>
-                        <button onclick="op('#cover','#cvr','modal/edit_work.php?id=<?=$aaa['id'];?>')" class="btn btn-dark">編輯作品</button>
-                        <button onclick="op('#cover','#cvr','api/del_work.php?id=<?=$aaa['id'];?>')" class="btn btn-dark">刪除作品</button>
-                        <a class="btn btn-light" href="./api/del_work.php?id=<?=$aaa['id']?>">刪除作品</a>
-                         
-                    </div>
-                </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="image">
+            <img src="./img/<?=$aaa['img']?>" style="width: 300px; height:300px;">
+            <div class="mask">
+                <p class="my-5"><?=$aaa['content']?></p>
+                <button onclick="op('#cover','#cvr','modal/edit_work.php?id=<?=$aaa['id'];?>')"
+                    class="btn btn-dark">編輯作品</button>
+                <br> <br>
+                <a class="btn btn-light" href="./api/del_work.php?id=<?=$aaa['id']?>">刪除作品</a>
+
             </div>
+        </div>
+    </div>
 
-            
-       
-        <?php
+
+
+    <?php
     }
     ?>
 
-     <?php
+    <?php
        }
     ?>
-    </div>
+</div>
 </div>
 <!-- 2end -->
 

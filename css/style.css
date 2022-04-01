@@ -40,7 +40,7 @@
 }
 
 .mask:hover {
-    transition: 1.5s;
+    transition: 0.5s;
     opacity: 1;
 }
 

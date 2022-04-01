@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/js.js"></script>
    
 </head>
 
@@ -38,7 +40,7 @@
 
     <!-- footer -->
     <div class="container-fluid">
-        <div class="d-flex justify-content-center align-items-center bg-green mx-5 my-3 ">
+        <div class="d-flex justify-content-center align-items-center bg-green mx-5 my-3  fixed-bottom">
             © 2022 Copyright All Rights Reserved Designed by &nbsp;
             <!-- <img src="./img/copyright.png" width="600px" height="40" alt=""> -->
             <img src="./img/黃莘懿.jpeg" style="width: 25px;">

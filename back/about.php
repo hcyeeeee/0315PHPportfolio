@@ -43,8 +43,8 @@
      </div>
     
     
-     <div class="col col-12 " style=" text-align:right">
-         <button onclick="op('#cover','#cvr','modal/about.php')" class="btn btn-dark">新增作品</button>
+     <div class="col col-12 " style=" text-align:center">
+         <button onclick="op('#cover','#cvr','modal/about.php')" class="btn btn-dark">編輯個人資料</button>
     
      </div>
      </div>

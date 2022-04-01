@@ -1,6 +1,4 @@
 <?php include_once "base.php";
-
-
 ?>
 
 
@@ -26,9 +24,7 @@
 
 </head>
 
-
 <body>
-
 
     <div class="container">
         <div class="d-flex justify-content-center">
@@ -46,11 +42,6 @@
                 <a class='px-2 text-light' href="?do=bottom">頁尾版權</a>
             </div>
 
-
-
-
-            
-
             <div>
                 <a class='px-2 text-light' href="./index.php">登出</a>
             </div>
@@ -59,21 +50,24 @@
         <!-- nav -->
     </div>
 
-    
-    
 
+    <div>
 
-
-    <?php $do=$_GET["do"]??'';
+        <?php $do=$_GET["do"]??'about';
          $file='back/'.$do.".php";
          if(file_exists($file)){
          include $file;
        }?>
+    </div>
 
 
-    <?php include_once "./front/footer.php"?>
+ 
+<div class="fixed-bottom">
+<?php include_once "./front/footer.php"?>
 
-   
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
