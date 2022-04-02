@@ -82,11 +82,11 @@ foreach ($rows as $row) {
             </div>
 
             <div class="col col-2 d-flex justify-content-center ">
-                <h1>
+                <h2>
                     <?=$row['title']?><br>
                     <p class="texttime">
                         <?=$row['time']?>
-                </h1>
+                </h2>
             </div>
 
             <div class="col col-4 d-flex justify-content-center  ">

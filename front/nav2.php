@@ -9,7 +9,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <!-- home -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?do=index"><img src="./img/home.png" width="110"
+                        <a class="nav-link active" aria-current="page" href="index.php"><img src="./img/home.png" width="110"
                                 height="75" class="mt-2" alt=""></a>
                         </a>
                     </li>

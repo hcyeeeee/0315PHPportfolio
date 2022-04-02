@@ -1,6 +1,5 @@
 <style>
 .aaa {
-
     width: 300px;
     height: 300px;
 }
@@ -10,37 +9,40 @@
     font-size: 20px;
 }
 </style>
-<!-- experince -->
 
-<div class="container ">
+<div class="container">
     <div class="row  d-flex justify-content-center ">
         <div class="col col-12 d-flex justify-content-center ">
             <p class="display-4 ml-0 "><em> - Experience -</em></p>
         </div>
-        <div>
-            <br><br><br><br>
-        </div>
+    </div>
+    <br><br><br><br><br>
 
-        <?php
-                $rows=$Experience->all();
-                foreach($rows as $row){ 
-                ?>
-        <div class="row  d-flex justify-content-center ">
-            <div class="col col-4 d-flex  ">
-                <h1><?= $row['title']?>
-                    <br>
-                    <p class="texttime"><?= $row['time']?>
-                </h1>
-                <p><?= $row['text']?>
-                <p>
-            </div>
-            <div class="col col-4 d-flex justify-content-start aaa">
-                <img src="./img/<?= $row['img']?>" alt="" height="200px" width="280px">
-            </div>
+    <?php
+        $rows=$Experience->all();
+        foreach($rows as $row){ 
+        ?>
+
+    <div class="row d-flex justify-content-center ">
+       
+    <div class="col col-3 ">
+            <h2><?= $row['title']?></h2>
+            <h5><?= $row['time']?></h5>
+            <br>
+            <p><?= $row['text']?></p>
         </div>
-        <div>
-            <br><br><br><br>
+        <div class="col col-1 d-flex justify-content-start">
+           adding pic......
         </div>
-        <?php
-                }
-                ?>
+        <div class="col col-4 d-flex justify-content-start">
+            <img src="./img/<?= $row['img']?>" alt="" height="200px" width="300px">
+        </div>
+    </div>
+
+
+    <br><br><br><br>
+
+<?php
+        }
+        ?>
+</div>

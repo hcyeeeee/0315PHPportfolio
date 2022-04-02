@@ -41,7 +41,7 @@
 
                 <div class="col-10 mb-1">
                     <label for="comment" class="form-label ">留言</label>
-                    <input type="text" class="form-control" name="comment" id="comment" placeholder="留下些什麼．．．">
+                    <textarea row="6" type="text" class="form-control" name="comment" id="comment" placeholder="留下些什麼．．．"></textarea>
                 </div>
 
 

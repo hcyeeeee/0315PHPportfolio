@@ -14,7 +14,6 @@
     z-index: -10;
 }
 
-/* Footer */
 
 
 
@@ -109,8 +108,6 @@ body {
     }
 }
 </style>
-<br><br><br><br>
-
 
 
 
@@ -140,9 +137,11 @@ body {
             <div class="image">
                 <img src="./img/<?=$aaa['img']?>" style="width: 300px; height:300px; ml-5; mr-1;">
                 <div class="mask">
-                    <div class="my-5"><?=$aaa['name']?><br>
+                    <div class="my-5">
+                        <?=$aaa['name']?>
+                        <br>
                         <?=$aaa['content']?>
-
+                       
                         <a href="<?=$aaa['link']?>" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -165,48 +164,4 @@ body {
 </html>
 
 
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-
-var captionText = document.getElementById("caption");
-img.onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-
-$(window).load(function() {
-    // The slider being synced must be initialized first
-    $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 210,
-        itemMargin: 5,
-        asNavFor: '#slider'
-    });
-
-    $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel"
-    });
-});
-</script>

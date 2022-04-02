@@ -56,22 +56,7 @@
             </div>
         </div>
     </div>
-    <!-- link icon -->
-    <div class="row justify-content-center align-items-center">
-    
-        <div class="col-6">
-            <!-- <p class="display-5">
-                <a href="mailto:auu0812@gmail.com" style="color:#222"><i
-                        class="fas fa-envelope-square fa-sm"></i></a>&nbsp;
-                <a href="https://github.com/hcyeeeee" style="color:#222"><i
-                        class="fab fa-github-square fa-sm"></i></a>&nbsp;
-                <a href="https://github.com/hcyeeeee" style="color:#222"><i
-                        class="fab fa-behance-square fa-sm"></i></a>&nbsp;
-                <a href="https://issuu.com/hcyeeeee/docs/2021_portfolio_71488229e5d9ad" style="color:#222"><i
-                        class="fab  fa-issuu-square fa-sm"></i></a> &nbsp;
-            </p> -->
-        </div>
-    </div>
+ 
 </div>
 <!-- about me end -->
 
@@ -80,8 +65,8 @@
     <br><br><br><br>
 </div>
 
-<?php include_once "experience.php"?>
 <?php include_once "skills.php"?>
+<?php include_once "experience.php"?>
 </div>
 
 

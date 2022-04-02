@@ -1,11 +1,5 @@
 <?php
 include_once "../base.php";
-$Aboutme->save(['id'=>1,'about'=>$_POST['about']]);
-$Aboutme->save(['id'=>1,'name'=>$_POST['name']]);
-$Aboutme->save(['id'=>1,'phone'=>$_POST['phone']]);
-$Aboutme->save(['id'=>1,'email'=>$_POST['email']]);
-$Aboutme->save(['id'=>1,'img'=>$_POST['img']]);
-
 
 
 if(!empty($_FILES['img']['tmp_name'])){
@@ -23,7 +17,7 @@ if(!empty($_FILES['img']['tmp_name'])){
 }
 
 
-to("../back.php?do=about");
+ to("../back.php?do=about");
 ?>
 
 
