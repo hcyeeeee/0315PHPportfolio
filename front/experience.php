@@ -30,7 +30,7 @@
     <div class="row d-flex justify-content-center ">
        
     <div class="col col-3 ">
-            <h2><?= $row['title']?></h2>
+            <h3><?= $row['title']?></h3>
             <h5><?= $row['time']?></h5>
             <br>
             <p><?= $row['text']?></p>
