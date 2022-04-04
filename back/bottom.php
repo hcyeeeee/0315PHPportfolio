@@ -10,7 +10,8 @@
 
             </thead>
             <tr>
-                <th> <input type="text" name="bottom" value="<?=$Bottom->find(1)['bottom'];?>"></th>
+                
+                <th> <textarea row="6" type="text" class="form-control"  name="bottom" value="<?=$Bottom->find(1)['bottom'];?>"></textarea></th>
             </tr>
 
             <td class="cent">

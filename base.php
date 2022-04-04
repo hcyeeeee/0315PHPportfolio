@@ -14,7 +14,7 @@ class DB{
         $this->pdo=new PDO($this->dsn,$this->root,$this->password);
     }
 
-   
+    
 // all
 
 public function all(...$arg){

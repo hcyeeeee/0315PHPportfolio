@@ -34,7 +34,7 @@
                     <br> <br> <br>
                     <!-- login -->
                     <li class="nav-item">
-                        <a href="./login.php" class="nav-link mt-1 "> <img src="./img/login.png" width="110"
+                        <a href="?do=login" class="nav-link mt-1 "> <img src="./img/login.png" width="110"
                                 height="75" alt=""></a>
                     </li>
                 </ul>

@@ -47,12 +47,13 @@
             <h1 class="myname">
                 <?=$Aboutme->find(1)['name'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </h1> &nbsp;
+            
             <!-- about-->
 
             <div class="col-6">
-                
+                <h5>
                 <?=$Aboutme->find(1)['about'];?>
-                
+                </h5>
             </div>
         </div>
     </div>
@@ -65,8 +66,9 @@
     <br><br><br><br>
 </div>
 
-<?php include_once "skills.php"?>
 <?php include_once "experience.php"?>
+<?php include_once "skills.php"?>
+
 </div>
 
 

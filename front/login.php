@@ -24,46 +24,58 @@ include_once "base.php";
           }
       ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    .container-fluid{
+        　background-image:url('../img/del3.png');
+       
+    }
+    </style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>resume</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-   
-</head>
 
-<body>
 
-            <h2 class="text-center font-weight-bold">登入後台</h2>
-<form action="./login.php" method="post" >
-    <table class='table m-auto w-auto'>
-        <tr>
-            <td>帳號：</td>
-            <td><input type="text" name="acc" id="acc" ></td>
-        </tr>
-        <tr>
-            <td>密碼：</td>
-            <td><input type="password"  name="pw" id="pw" ></td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" class="form-check-input" id="exampleCheck1">
-                   remember me
-                </td>
-           
-        </tr>    </table>
-    <div class='text-center  '>
-   <button class="btn btn-dark" onclick="login()">登入</button>
-   <button class="btn btn-dark" onclick="reset()">重置</button>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="?do=reg" >註冊</a>
-                <a href="?do=forget">忘記密碼</a>
+    <!-- login -->
+
+    <div class="container-fluid ">
+        <div class="login-bg">
+            <div class="row">
+                <div class="col col-12 d-flex justify-content-center mt-5">
+                    <img class="login" src="./img/login.png" height="130px" width="200px" alt="">
+                </div>
             </div>
-</div>
-        </form>
+            <form action="./login.php" method="post">
+                <div class="row d-flex justify-content-center">
+                    <div class="col col-3">
+                        <div class="form-group d-block">
+                            <label for="account">Account</label>
+                            <input type="text" class="form-control" name="acc" id="acc">
+                        </div>
+                            <div class="form-group d-block">
+                                <label for="Password">Password</label>
+                                <input type="password" class="form-control" name="pw" id="pw">
+                            </div>
+
+
+                            <div class="form-group form-check mt-2 d-block">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">remember me</label>
+                            </div>
+
+                            <button class="btn btn-dark" onclick="login()">登入</button>
+                            <button class="btn btn-dark" onclick="reset()">重置</button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="?do=reg">註冊</a>
+                            <a href="?do=forget">忘記密碼</a>
+                    </div>
+                </div>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    
+</body>

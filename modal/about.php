@@ -45,7 +45,8 @@ include_once "../base.php";
 
   <div class="form-group">
     <label for="exampleFormControlTextarea1">關於我：</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" row="4" type="text" name="about" value="<?=$Aboutme->find(1)['about'];?>"></textarea>
+   
+    <textarea  cols="30" rows="6" class="form-control" type="text" name="about" value="<?=$Aboutme->find(1)['about'];?>"></textarea>
 
   </div>
 

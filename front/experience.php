@@ -11,6 +11,10 @@
 </style>
 
 <div class="container">
+
+<div class="row col col-12 d-flex justify-content-center align-items-center">
+    <img src="./img/line3.png" height="190px" alt="">
+</div>
     <div class="row  d-flex justify-content-center ">
         <div class="col col-12 d-flex justify-content-center ">
             <p class="display-4 ml-0 "><em> - Experience -</em></p>
@@ -32,7 +36,7 @@
             <p><?= $row['text']?></p>
         </div>
         <div class="col col-1 d-flex justify-content-start">
-           adding pic......
+           <!-- adding pic...... -->
         </div>
         <div class="col col-4 d-flex justify-content-start">
             <img src="./img/<?= $row['img']?>" alt="" height="200px" width="300px">
