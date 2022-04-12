@@ -14,7 +14,7 @@
     width: 70%;
     min-width: 300px;
     max-width: 800px;
-    height: 70%;
+    height: 100%;
     min-height: 300px;
     position: absolute;
     z-index: 5;
@@ -59,13 +59,11 @@
         <div class="col col-12 d-flex justify-content-center align-items-center">
 
              <p class="display-5">
-                <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fas fa-envelope-square"></i></a>&nbsp;
+                <a href="mailto:auu0812@gmail.com" style="color:#222"><i class="fas fa-envelope-square"></i></a>&nbsp;
                  <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab fa-github-square"></i></a>&nbsp;
-                 <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab fa-behance-square"></i></a>&nbsp;
-                 <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab  fa-behance-square"></i></a> &nbsp; 
+                 <a href="https://www.behance.net/auu08122896" style="color:#222"><i class="fab fa-behance-square"></i></a>&nbsp;
+                 <a href="https://issuu.com/hcyeeeee/docs/2022_portfolio" style="color:#222"><i class="fas fa-pen-square"></i></a> &nbsp; 
                 </p>
-        </div>
-
     </div>
     <br><br>
 

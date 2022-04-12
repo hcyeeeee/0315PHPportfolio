@@ -1,9 +1,13 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- nav -->
-<nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            
-        </button>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="collapse navbar-collapse d-flex d-flex justify-content-center " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -34,7 +38,7 @@
                     <br> <br> <br>
                     <!-- login -->
                     <li class="nav-item">
-                        <a href="?do=login" class="nav-link mt-1 "> <img src="./img/login.png" width="110"
+                        <a href="./login.php" class="nav-link mt-1 "> <img src="./img/login.png" width="110"
                                 height="75" alt=""></a>
                     </li>
                 </ul>
@@ -44,4 +48,6 @@
         </div>
     </nav>
     </div>
+
+    
     <!-- nav end -->

@@ -25,6 +25,7 @@
     top: 0px;
     left: 0px;
     overflow: auto;
+    border-radius: 10px;
 }
 
 #coverr {
@@ -42,6 +43,7 @@
     bottom: 0px;
     margin: auto;
     overflow: auto;
+    border-radius: 10px;
 }
 </style>
 
@@ -104,7 +106,7 @@ foreach ($rows as $row) {
         </div>
     </div>
     </div>
-
+<br>
     <!-- 1end -->
 
     <?php

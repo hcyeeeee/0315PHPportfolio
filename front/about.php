@@ -33,8 +33,8 @@
             <p class="display-5">
             <a href="mailto:auu0812@gmail.com" style="color:#222"><i class="fas fa-envelope-square fa-sm"></i></a>&nbsp;
             <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab fa-github-square fa-sm"></i></a>&nbsp;
-            <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab fa-behance-square fa-sm"></i></a>&nbsp;
-            <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab  fa-behance-square fa-sm"></i></a> &nbsp;
+            <a href="https://www.behance.net/auu08122896" style="color:#222"><i class="fab fa-behance-square fa-sm"></i></a>&nbsp;
+            <a href="https://issuu.com/hcyeeeee/docs/2022_portfolio" style="color:#222"><i class="fab  fa-book fa-sm"></i></a> &nbsp;
         </p>
         </div>
 
@@ -70,5 +70,4 @@
 <?php include_once "skills.php"?>
 
 </div>
-
 

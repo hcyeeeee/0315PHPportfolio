@@ -8,6 +8,7 @@
     top: 0px;
     left: 0px;
     overflow: auto;
+    border-radius: 10px;
 }
 
 #coverr {
@@ -25,6 +26,7 @@
     bottom: 0px;
     margin: auto;
     overflow: auto;
+    border-radius: 5px;
 }
 </style>
 

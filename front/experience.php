@@ -8,6 +8,10 @@
     font-style: italic;
     font-size: 20px;
 }
+
+.imgg{
+    border-radius: 10px;
+}
 </style>
 
 <div class="container">
@@ -39,7 +43,7 @@
            <!-- adding pic...... -->
         </div>
         <div class="col col-4 d-flex justify-content-start">
-            <img src="./img/<?= $row['img']?>" alt="" height="200px" width="300px">
+            <img src="./img/<?= $row['img']?>" alt="" class="imgg" height="270px" width="300px">
         </div>
     </div>
 

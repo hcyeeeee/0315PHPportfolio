@@ -1,23 +1,5 @@
 <style>
-.card-img-top {
-    /* flex-shrink: 0; */
-    max-width: 100%;
-    max-height: 100%;
-}
 
-#pic:hover {
-    background: white;
-    z-index: 10;
-}
-
-#picc {
-    z-index: -10;
-}
-
-
-
-
-/* try */
 .image {
     position: relative;
     margin: 10px;
@@ -107,6 +89,10 @@ body {
         max-width: 100%;
     }
 }
+
+.imgg{
+    border-radius: 10px;
+}
 </style>
 
 
@@ -135,13 +121,13 @@ body {
 
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="image">
-                <img src="./img/<?=$aaa['img']?>" style="width: 300px; height:300px; ml-5; mr-1;">
+                <img src="./img/<?=$aaa['img']?>" class="imgg" style="width: 300px; height:300px; ml-5; mr-1;">
                 <div class="mask">
                     <div class="my-5">
-                        <?=$aaa['name']?>
-                        <br>
-                        <?=$aaa['content']?>
-                       
+                    <h4><?=$aaa['name']?> <h4>
+                        
+                       <h5> <?=$aaa['content']?></h5>
+                       <br>
                         <a href="<?=$aaa['link']?>" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -150,11 +136,12 @@ body {
 
 
 
-        <?php
+    <?php
     }
     ?>
     <hr>
-    <?php }
+    <?php 
+    }
     ?>
  
     </div>
