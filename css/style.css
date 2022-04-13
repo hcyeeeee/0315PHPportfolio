@@ -13,11 +13,6 @@
     z-index: -10;
 }
 
-/* Footer */
-
-
-
-/* try */
 .image {
     position: relative;
     margin: 10px;
@@ -106,6 +101,7 @@ body {
         flex: 100%;
         max-width: 100%;
     }
+   
 }
 
 
@@ -120,9 +116,7 @@ body {
         height: 60px;
     }
 
-    .skillscol {
-        width: 400px;
-    }
+  
 
     .line {
         width: 100%;
@@ -139,22 +133,16 @@ body {
         margin-top: 17px;
     }
 
-    .login-bg {
-
-
-
-        background-image: url('./img/bg2.PNG');
-        background-repeat: no-repeat;
-
+    
+    .ccc{
+        display:flex;
+        flex-direction: column;
+        flex-flow: wrap;
     }
 
 
 }
 
-
-body {
-    font-family: "Times New Roman", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, serif;
-}
 
 .nav-link {
 
@@ -187,16 +175,7 @@ body {
     border-bottom: none;
 }
 
-.login-bg {
 
-    background-image: url('./img/bg7.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-size: 120%;
-    background-position: -130px 40px;
-
-}
 
 @media screen and (max-width: 768px) {
 
@@ -214,14 +193,6 @@ body {
 
 
 
-/* .row1 {
-    background-image: url(./img/bg7.png);
-    background-size:auto;
-} */
-
-/* .row1:hover{
-    background-image: url(./img/bg5.png);
-} */
 
 @media screen and (max-width: 768px) {
 

@@ -34,23 +34,23 @@
             <a href="mailto:auu0812@gmail.com" style="color:#222"><i class="fas fa-envelope-square fa-sm"></i></a>&nbsp;
             <a href="https://github.com/hcyeeeee" style="color:#222"><i class="fab fa-github-square fa-sm"></i></a>&nbsp;
             <a href="https://www.behance.net/auu08122896" style="color:#222"><i class="fab fa-behance-square fa-sm"></i></a>&nbsp;
-            <a href="https://issuu.com/hcyeeeee/docs/2022_portfolio" style="color:#222"><i class="fab  fa-book fa-sm"></i></a> &nbsp;
+            <a href="https://issuu.com/hcyeeeee/docs/2022_portfolio" style="color:#222"><i class="fas fa-pen-square fa-sm"></i></a> &nbsp;
         </p>
         </div>
 
     </div>
     <br><br>
 
-    <div class="row justify-content-center align-items-center">
+    <div class="ccc row justify-content-center align-items-center">
         <!-- name-->
-        <div class="col col-6 d-flex justify-content-center align-items-center">
+        <div class=" col col-6 d-flex justify-content-center align-items-center">
             <h1 class="myname">
                 <?=$Aboutme->find(1)['name'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </h1> &nbsp;
             
             <!-- about-->
 
-            <div class="col-6">
+            <div class="about col-6 ">
                 <h5>
                 <?=$Aboutme->find(1)['about'];?>
                 </h5>
@@ -68,6 +68,8 @@
 
 <?php include_once "experience.php"?>
 <?php include_once "skills.php"?>
-
+<div class="row col col-12 d-flex justify-content-center align-items-center">
+    <img src="./img/line3.png" height="190px" alt="">
+    </div>
 </div>
 

@@ -14,7 +14,7 @@
     width: 70%;
     min-width: 300px;
     max-width: 800px;
-    height: 100%;
+    height: 90%;
     min-height: 300px;
     position: absolute;
     z-index: 5;
@@ -25,6 +25,14 @@
     bottom: 0px;
     margin: auto;
     overflow: auto;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 600px){
+    .class{
+        background: #ccc;
+    }
 }
 </style>
 

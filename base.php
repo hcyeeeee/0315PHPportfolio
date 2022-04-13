@@ -7,8 +7,7 @@ class DB{
     private  $password='';
     private  $table;
     private  $pdo;
-
-    //建立建構式，在建構時帶入table名稱會建立資料庫的連線
+    
     public function __construct($table){
         $this->table=$table;
         $this->pdo=new PDO($this->dsn,$this->root,$this->password);

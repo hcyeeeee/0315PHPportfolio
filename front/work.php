@@ -22,13 +22,10 @@
 }
 
 .mask:hover {
-    transition: 1.5s;
+    transition: 0.8s;
     opacity: 1;
 }
 
-.carousel-item {
-    height: 650px;
-}
 
 .my-5 {
     box-sizing: border-box;
