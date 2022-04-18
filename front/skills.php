@@ -66,7 +66,7 @@
 
         </div>
         <div class="col-6 col-sm-2 text-center mt-5">
-            <h2> Other skills
+            <h2> Other
             </h2>
             <hr>
             <ul>

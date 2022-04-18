@@ -73,9 +73,14 @@
 }
 
 /* about */
+
 .myname {
-    font-size: 80px;
-    color:black;
+    font-size: 70px;
+    color:#222;
+}
+
+.experience{
+    text-align: center;
 }
 
 .contact {
