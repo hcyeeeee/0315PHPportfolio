@@ -1,11 +1,4 @@
 <style>
-.aaa {
-
-    width: 408px;
-
-    height: 300px;
-}
-
 .texttime {
     font-style: italic;
     font-size: 18px;
@@ -14,14 +7,14 @@
 
 
 <div class="container">
-    <div class="row col col-12 d-flex justify-content-center align-items-center">
-    <div class="row  d-flex justify-content-center ">
-        <div class="col col-12 d-flex justify-content-center ">
-            <p class="display-4 ml-0 "><em> - Skills -</em></p>
+    <div class="row d-flex justify-content-center">
+        <div class="row  d-flex justify-content-center ">
+            <div class="col col-12 d-flex justify-content-center ">
+                <p class="display-4 ml-0 "><em> - Skills -</em></p>
+            </div>
         </div>
-    </div>
         <br> <br> <br>
-        <div class="col col-2 text-center mt-5">
+        <div class="col-6 col-sm-2 text-center mt-5">
             <h2>
                 Design
             </h2>
@@ -39,7 +32,7 @@
 
             </ul>
         </div>
-        <div class="col col-2 text-center mt-5">
+        <div class="col-6 col-sm-2 text-center mt-5">
             <h2> Frontend</h2>
             <hr>
             <ul>
@@ -55,7 +48,7 @@
             </ul>
         </div>
 
-        <div class="col col-2 text-center mt-5">
+        <div class="col-6 col-sm-2 text-center mt-5">
             <h2> Backend
             </h2>
             <hr>
@@ -73,7 +66,7 @@
 
 
         </div>
-        <div class=" col col-2 text-center mt-5">
+        <div class="col-6 col-sm-2 text-center mt-5">
             <h2> Others
             </h2>
             <hr>

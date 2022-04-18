@@ -1,3 +1,14 @@
+*{
+    font-family: "Times New Roman","微軟正黑體";
+text-align: center;
+}
+
+/* about */
+.myname {
+    font-size: 80px;
+    color:#666;
+}
+
 .card-img-top {
     /* flex-shrink: 0; */
     max-width: 100%;
@@ -219,13 +230,9 @@ body {
         font-size: 18px;
     }
     
-    .myname {
-        font-size: 80px;
-        color: #222;
-    }
-
+ 
+  
 
 }
-
 
 

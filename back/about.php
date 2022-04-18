@@ -29,11 +29,7 @@
 }
 
 
-@media screen and (max-width: 600px){
-    .class{
-        background: #ccc;
-    }
-}
+
 </style>
 
 

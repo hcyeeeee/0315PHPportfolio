@@ -2,12 +2,15 @@
 class DB{
 
     //宣告成員屬性
+    // private $dsn="mysql:host=localhost;charset=utf8;dbname=s1100426";
+    // private  $root='s1100426';
+    // private  $password='s1100426';
     private $dsn="mysql:host=localhost;charset=utf8;dbname=portfolio";
     private  $root='root';
     private  $password='';
     private  $table;
     private  $pdo;
-    
+
     public function __construct($table){
         $this->table=$table;
         $this->pdo=new PDO($this->dsn,$this->root,$this->password);

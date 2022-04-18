@@ -62,3 +62,12 @@
  </nav>
  </div>
  <!-- nav end -->
+ <!-- <script type="text/javascript">
+	$(function(){
+		$('.nav_btn').click(function(){
+				// $('nav').addClass('status_open')
+				//建議改成toggle寫法，這樣就不用另外再寫收合時的css代碼或js了
+				$('nav').toggle()
+		})
+	})
+</script> -->
