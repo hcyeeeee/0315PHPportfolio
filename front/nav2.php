@@ -11,16 +11,15 @@
 </script>
 <!-- nav -->
 
-<nav class="navbar navbar-expand-md navbar-white bg-white ">
-    <div class="container-fluid d-flex justify-content-center">
-
+<nav class="navbar navbar-expand-md navbar-light bg-white">
+    <div class="container-fluid ">
         <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        <button class="bb navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-center " id="navbarNavDropdown">
-            <div class="d-flex justify-content-center">
+        <div class="aa collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+            <div class="cc d-flex justify-content-center">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <!-- home -->
                     <li class="nav-item">
@@ -62,10 +61,8 @@
 
 <script type="text/javascript">
 $(function() {
-    $('.navbar-toggler').click(function() {
-        // $('nav').addClass('status_open')
-        //建議改成toggle寫法，這樣就不用另外再寫收合時的css代碼或js了
-        $('.navbar-collapse').toggle()
+    $('.bb').click(function() {
+        $('.navbar-nav').toggle()
     })
 })
 </script>

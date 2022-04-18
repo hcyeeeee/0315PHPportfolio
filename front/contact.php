@@ -7,7 +7,7 @@
             <p>
             <h5>Currently seeking new opportunities for web design
                 <br>
-                Please leave your message or contact me by:
+                Please leave your message or contact me by
             </h5>
             <br>
             <h5>Phone:0<?=$Aboutme->find(1)['phone'];?></h5>

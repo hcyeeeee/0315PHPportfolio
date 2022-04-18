@@ -1,7 +1,6 @@
 <style>
-.texttime {
-    font-style: italic;
-    font-size: 18px;
+.h5{
+    font-weight:bold;
 }
 </style>
 
@@ -67,18 +66,18 @@
 
         </div>
         <div class="col-6 col-sm-2 text-center mt-5">
-            <h2> Others
+            <h2> Other skills
             </h2>
             <hr>
             <ul>
                 <li>
-                    <h5>pattern design</h5>
+                    <h5>Pattern design</h5>
                 </li>
                 <li>
-                    <h5>weaving</h5>
+                    <h5>Weaving</h5>
                 </li>
                 <li>
-                    <h5>knitting</h5>
+                    <h5>Knitting</h5>
                 </li>
             </ul>
 
