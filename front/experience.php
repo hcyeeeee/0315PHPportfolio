@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/newstyle.css">
 
 
-<div class="container">
+<div class="container experience">
 
     <div class="row col col-12 d-flex justify-content-center align-items-center">
         <img src="./img/line3.png" height="190px" alt="">
