@@ -71,7 +71,7 @@
     </div>
     <br><br>
 
-    <div class="row">
+    <div class="row mb-5">
         <div class="col col-12 d-flex justify-content-center align-items-center">
             <div class="col col-6 d-flex justify-content-center align-items-center">
                 <h2 class="myname">
@@ -84,7 +84,10 @@
 
 
         </div>
+        </div>
 
-<!-- 
+        <?php
 
+include_once "./front/footer.php";
+?>
 
